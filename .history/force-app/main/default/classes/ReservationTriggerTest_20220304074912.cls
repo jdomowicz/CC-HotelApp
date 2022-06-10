@@ -1,0 +1,38 @@
+@isTest
+public class ReservationTriggerTest {
+
+
+
+    @TestSetup
+    static void makeData(){
+
+        Hotel__c h1 = new Hotel__c(
+        Name='Test Hotel',
+        City__c = 'Wroclaw'
+        );
+
+        Hotel__c h2 = new Hotel__c(
+        Name='Test Hotel',
+        City__c = 'Bilgoraj'
+        );
+
+    insert h1;
+    insert h2;
+
+        Room__c r1 = new Room__c(
+            Name = 'Test Room 1',
+            Hotel__c = h1.Id
+        );
+
+        Room__c r2 = new Room__c(
+            Name = 'Test Room 1',
+            Hotel__c = h2.Id
+        );
+
+    insert r1;
+    insert r2;
+
+
+    }
+
+}

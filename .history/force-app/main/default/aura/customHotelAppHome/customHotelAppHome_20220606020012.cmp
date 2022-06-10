@@ -1,0 +1,21 @@
+<aura:component implements="lightning:appHomeTemplate" description="3 section custom: 2-7-3">
+
+    <aura:attribute name="left" type="Aura.Component[]" />
+    <aura:attribute name="center" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+
+    <div aura:id="container">
+        <lightning:layout>
+
+            <lightning:layoutItem flexibility="grow"
+                                  class="slds-m-right_small">
+                {!v.left}
+            </lightning:layoutItem>
+            
+
+        </lightning:layout>
+    </div>
+
+
+
+</aura:component>

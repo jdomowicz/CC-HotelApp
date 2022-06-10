@@ -1,0 +1,9 @@
+<aura:component implements="lightning:appHomeTemplate" description="3 section custom 2-7-3">
+
+<aura:attribute name="left" type="Aura.Component[]" />
+<aura:attribute name="cem" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+
+
+
+</aura:component>

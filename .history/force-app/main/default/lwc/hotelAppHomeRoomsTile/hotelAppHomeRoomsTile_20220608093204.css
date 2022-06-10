@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    border-radius: 0.25rem;
+    justify-content: center;
+    margin: 4px;
+}
+
+img.carImage {
+    height: 120px;
+    max-width: initial;
+    pointer-events: none;
+}
+.info{
+    max-width:200px;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 2px;
+}

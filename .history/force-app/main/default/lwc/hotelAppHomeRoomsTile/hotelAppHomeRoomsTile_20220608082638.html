@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Available Rooms">
+
+
+        <template if:true={roomList}>
+
+            <template for:each={roomList} for:item="room">
+
+                <div key={room.Id}>
+                    <img src={room.photo_url__c} alt={room.Name} width="200" height="150">
+                </div>
+
+            </template>
+
+        </template>
+
+
+    </lightning-card>
+</template>

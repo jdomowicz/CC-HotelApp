@@ -1,0 +1,86 @@
+@isTest(SeeAllData=true)
+
+public class ReservationTriggerTest {
+
+    @isTest(SeeAllData=true) static void testMethod1() {
+
+        Hotel__c h1 = new Hotel__c(
+        Name='Test Hotel',
+        City__c = 'Wroclaw'
+        );
+
+        Hotel__c h2 = new Hotel__c(
+        Name='Test Hotel',
+        City__c = 'Bilgoraj'
+        );
+
+    insert h1;
+    insert h2;
+
+        Room__c r1 = new Room__c(
+            Name = 'Test Room 1',
+            Hotel__c = h1.Id
+        );
+
+        Room__c r2 = new Room__c(
+            Name = 'Test Room 1',
+            Hotel__c = h2.Id
+        );
+
+    insert r1;
+    insert r2;
+
+        Contact c1 = new Contact(
+            FirstName = 'test',
+            LastName = 'Contact'
+        );
+
+    insert c1;
+
+        Reservation__c rr = new Reservation__c(
+            Name = 'Reservation TestSetup',
+            Guest_name__c = c1.Id,
+            Room__c = r1.Id,
+            Check_In_Date__c = date.newInstance(2022, 3, 21),
+            Check_out_Date__c = date.newInstance(2022, 3, 28)
+        );
+
+
+try{
+    insert rr;
+
+}
+
+      Contact guestId = [SELECT Id FROM Contact WHERE Id =: c1.Id];
+      List<Reservation__c> newReservations = new list<Reservation__c>();
+      Room__c roomsList = [SELECT Id,Name from Room__c WHERE id =: r1.Id];
+
+    for(integer i = 0; i<150;i++){
+
+            Reservation__c r = new Reservation__c(
+            Name = 'Reservation ' + i,
+            Guest_name__c = guestId.Id,
+            Room__c = roomsList.Id,
+            Check_In_Date__c =  i < 100 ? date.newInstance(2022, 3, 22) : date.newInstance(2022, 4, 22),
+            Check_out_Date__c = i < 100 ? date.newInstance(2022, 3, 27) : date.newInstance(2022, 4, 27)
+        );
+
+        newReservations.add(r);
+
+    }
+
+        try {
+            insert newReservations;
+        }
+        catch(DmlException e){
+            Boolean expectedExceptionThrown =  e.getMessage().contains('Please choose different room or different date.') ? true : false;
+            system.assertEquals(expectedExceptionThrown, true);
+        }
+
+        list<Reservation__c> testReservations = [Select Id,Name From Reservation__c WHERE Room__c =: roomsList.Id];
+
+        System.assertEquals(51, testReservations.size());
+
+
+}
+}

@@ -1,0 +1,45 @@
+<template>
+    <lightning-card>
+
+
+        <div class="slds-grid slds-gutters">
+
+            <div class="slds-col slds-size_4-of-5">
+
+                <div class="slds-p-left_small">
+                    <strong style="text-transform: uppercase height:5rem">{Name}</strong>
+                </div>
+
+            </div>
+
+            <div class="slds-col slds-size_1-of-5">
+                <div class="alignmentr slds-p-right_small slds-p-bottom_small">
+                    <lightning-icon icon-name="standard:link" alternative-text="Link" title="Room Link"
+                        onclick={openRecord}>
+                    </lightning-icon>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <img src={photo_url__c} class="slds-align_absolute-center slds-p-around_x-small carImage" alt={Name} width="400"
+            height="300">
+
+
+        <div class="slds-align_absolute-center">
+            <strong>Type: &nbsp;</strong> {Type__c}
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <strong>Room Number: &nbsp;</strong> {Room_Number__c}
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <strong>Max Number of Guests: &nbsp;</strong> {Max_Number_of_Guests__c}
+        </div>
+
+
+    </lightning-card>
+</template>

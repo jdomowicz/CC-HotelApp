@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    background-color: white;
+    border-radius: 0.25rem;
+    align-items: center;
+        justify-content: center;
+}
+
+img.carImage {
+    height: 120px;
+    max-width: initial;
+    pointer-events: none;
+}

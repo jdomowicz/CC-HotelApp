@@ -1,0 +1,11 @@
+.alignmentr {
+    display: flex;
+    justify-content: flex-end;
+}
+.title{
+    
+        justify-content: center;
+            display: flex;
+            padding: 10px 0;
+        
+}

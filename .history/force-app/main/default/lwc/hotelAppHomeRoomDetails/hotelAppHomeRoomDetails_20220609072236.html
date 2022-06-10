@@ -1,0 +1,31 @@
+<template>
+    <lightning-card>
+
+        <div>
+
+            <lightning-icon icon-name="standard:link" class="slds-p-around__" alternative-text="Link" title="Room Link" onclick={openRecord}>
+            </lightning-icon>
+        </div>
+
+        <img src={photo_url__c} class="slds-align_absolute-center slds-p-around_x-small carImage" alt={Name} width="300"
+            height="200">
+
+        <div class="slds-align_absolute-center">
+            <strong>{Name}</strong>
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <strong>Type: &nbsp;</strong> {Type__c}
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <strong>Room Number: &nbsp;</strong> {Room_Number__c}
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <strong>Max Number of Guests: &nbsp;</strong> {Max_Number_of_Guests__c}
+        </div>
+
+
+    </lightning-card>
+</template>

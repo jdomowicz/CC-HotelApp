@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img.carImage {
+    height: 120px;
+    max-width: initial;
+    pointer-events: none;
+}

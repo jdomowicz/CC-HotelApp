@@ -1,0 +1,51 @@
+<template>
+
+    <lightning-card>
+
+        <div class="slds-m-horizontal_medium">
+
+            <lightning-combobox name="Country" label="Country" value={countrySelectedValue} placeholder="Select Country"
+                options={countrySelectOptions} onchange={handleCountryChange}></lightning-combobox>
+
+            <lightning-combobox name="City" label="City" value={citySelectedValue} placeholder="Select City"
+                options={citySelectOptions} onchange={handleCityChange}></lightning-combobox>
+
+            <lightning-combobox name="Hotel" label="Hotel Name" value={hotelSelectedValue} placeholder="Select Hotel"
+                options={hotelSelectOptions} onchange={handleHotelChange}></lightning-combobox>
+
+
+
+
+            <div class="slds-grid slds-gutters_xx-small">
+                <div class="slds-col">
+                    <lightning-input type="date" name="dateInput" label="Start Date"></lightning-input>
+                </div>
+                <div class="slds-col">
+                    <lightning-input type="date" name="dateInput" label="End Date"></lightning-input>
+                </div>
+
+            </div>
+
+            <lightning-input type="number" label="Number of Guests" value="2"> </lightning-input>
+            <lightning-input type="checkbox" label="Available" name="roomAvailable" checked required></lightning-input>
+
+            <template if:true={roomTypePicklist}>
+
+                <p class="slds-p-around_x-small"><strong>Type:</strong></p>
+
+                <div class="slds-p-left_small">
+
+                    <template for:each={roomTypePicklist} for:item="type">
+                        <lightning-input key={type.label} type="checkbox" label={type.label} value={type.value}>
+                        </lightning-input>
+
+                    </template>
+
+                </div>
+            </template>
+
+
+        </div>
+
+    </lightning-card>
+</template>

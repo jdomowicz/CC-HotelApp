@@ -1,0 +1,6 @@
+<aura:component implements="lightning:appHomeTemplate" description="Main column
+ and right sidebar. On a phone, the regions are of equal width">
+
+
+
+</aura:component>

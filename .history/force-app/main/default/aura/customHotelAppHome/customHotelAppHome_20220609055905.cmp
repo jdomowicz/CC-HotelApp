@@ -1,0 +1,28 @@
+<aura:component implements="lightning:appHomeTemplate" description="3 section custom: 2-7-3" access="global">
+
+    <aura:attribute name="left" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="center" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="right" type="Aura.Component[]" access="global"/>
+
+    <div aura:id="container">
+        <lightning:layout>
+
+            <lightning:layoutItem size="2" aura:id="left" >
+                {!v.left}
+            </lightning:layoutItem>
+
+              <lightning:layoutItem size="7" aura:id="center">
+                {!v.center}
+            </lightning:layoutItem>
+
+             <lightning:layoutItem size="3" aura:id="right">
+                {!v.right}
+            </lightning:layoutItem>
+
+
+        </lightning:layout>
+    </div>
+
+
+
+</aura:component>

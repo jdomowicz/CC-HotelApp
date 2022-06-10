@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>roomMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This channel pass selected room id into room details component</description>
+
+    <lightningMessageFields>
+        <fieldName>roomId</fieldName>
+        <description>This is the room Id that is passed</description>
+    </lightningMessageFields>
+
+</LightningMessageChannel>

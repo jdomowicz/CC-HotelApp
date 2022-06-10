@@ -1,0 +1,18 @@
+.alignmentr {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.hotelName{
+text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 0.1rem;
+    border-bottom: outset;
+}
