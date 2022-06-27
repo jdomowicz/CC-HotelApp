@@ -1,0 +1,86 @@
+<template>
+
+    <template if:true={recordId}>
+
+        <lightning-card>
+
+            <div class="slds-grid slds-gutters  slds-m-right_small">
+
+                <div class="slds-col slds-size_11-of-12">
+                    <div class="slds-align_absolute-center slds-m-around_small">
+                        <h2 class="hotelName">{hotelName}</h2>
+                    </div>
+
+                </div>
+
+                <div class="slds-col slds-size_1-of-12 alignmentr">
+                    <div class="alignmentr slds-align_absolute-center">
+
+                        <lightning-icon icon-name="standard:link" alternative-text="Link" title="Room Link"
+                            onclick={openRecord}>
+
+                        </lightning-icon>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <img src={photo_url__c} class="slds-align_absolute-center slds-p-around_x-small carImage" alt={Name}
+                width="400" height="300">
+
+
+            <div class="slds-align_absolute-center slds-p-around_xx-small">
+                <strong>{roomName}</strong>
+            </div>
+
+            <div class="slds-align_absolute-center slds-p-around_xx-small">
+                <strong>Type: &nbsp;</strong> {Type__c}
+            </div>
+
+            <div class="slds-align_absolute-center slds-p-around_xx-small">
+                <strong>Room Number: &nbsp;</strong> {Room_Number__c}
+            </div>
+
+            <div class="slds-align_absolute-center slds-p-around_xx-small">
+                <strong>Max Number of Guests: &nbsp;</strong> {Max_Number_of_Guests__c}
+            </div>
+
+
+            <lightning-record-edit-form class="slds-m-around_small" object-api-name={reservation_Object}>
+
+                <lightning-input-field field-name={reservationName}> </lightning-input-field>
+                <lightning-input-field field-name={reservationRoom} value={recordId}> </lightning-input-field>
+                <lightning-input-field field-name={reservationCheckIn}> </lightning-input-field>
+                <lightning-input-field field-name={reservationCheckOut}> </lightning-input-field>
+                <lightning-input-field field-name={reservationGuest}> </lightning-input-field>
+                <lightning-input-field field-name={reservationBreakfast}> </lightning-input-field>
+                <lightning-input-field field-name={reservationBreakfastType}> </lightning-input-field>
+
+                <div class="slds-align_absolute-center">
+                    <lightning-button variant="brand" type="submit" label="Save" class="slds-p-around_x-small">
+                    </lightning-button>
+                    <lightning-button label="Cancel" onclick={handleReset} class="slds-p-around_x-small"></lightning-button>
+                </div>
+
+            </lightning-record-edit-form>
+
+        </lightning-card>
+
+    </template>
+
+    <template if:false={recordId}>
+
+        <lightning-card>
+
+            <div class="slds-align_absolute-center slds-m-around_small">
+                <h2 class="default">Select Room to see Details!</h2>
+            </div>
+
+        </lightning-card>
+
+    </template>
+
+</template>

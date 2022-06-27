@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This messge channel handle event comunication filter pannel and rooms list</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This field store filter properties</description>
+        <fieldName>roomId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>roomId</masterLabel>
+</LightningMessageChannel>

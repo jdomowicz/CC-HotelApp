@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Hierarchy_lookup__c</fullName>
+    <externalId>false</externalId>
+    <label>User Hierarchy lookup</label>
+    <relationshipName>User_Hierarchy_lookups</relationshipName>
+    <restrictedAdminField>false</restrictedAdminField>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Hierarchy</type>
+</CustomField>
