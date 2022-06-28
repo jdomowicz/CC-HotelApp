@@ -1,0 +1,22 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Page
+<br/>
+<!-- End Default Content REMOVE THIS -->
+<apex:pageBlock Title="Account Page">
+<!-- this is just fields (remove recordSetVar before)
+     https://cunning-unicorn-mla094-dev-ed--c.visualforce.com/apex/visualForceSamplePage?id=0017Q00000MP9gsQAD
+Name:{!account.name}<br/>
+Type:{!account.type}<br/>
+-->
+
+<!-- this is automatic values based on id (remove recordSetVar before)
+     https://cunning-unicorn-mla094-dev-ed--c.visualforce.com/apex/visualForceSamplePage?id=0017Q00000MP9gsQAD
+<apex:detail/>
+-->
+
+<apex:pageBlockTable value=></apex:pageBlockTable>
+
+</apex:pageBlock>
+</apex:page>

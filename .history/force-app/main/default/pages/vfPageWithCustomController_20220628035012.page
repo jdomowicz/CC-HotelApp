@@ -1,0 +1,15 @@
+<apex:page controller="vfCustomController">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Page <br/>
+<!-- End Default Content REMOVE THIS -->
+
+myName From Apex: {!Name}<br/>
+<apex:pageBlock>
+<apex:pageBlockTable value="{!AccList}" var="acc">
+
+
+
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:page>
