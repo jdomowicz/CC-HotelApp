@@ -47,6 +47,8 @@ public class roomTriggerHandler {
         }
     }
 
+
+
     public static void afterUpdate(list<Room__c> updateRecord ,map<Id,Room__c> oldMapValue) {
 
 

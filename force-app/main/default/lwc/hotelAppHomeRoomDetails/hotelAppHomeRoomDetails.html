@@ -61,9 +61,7 @@
 
             <template if:true={showReservation}>
             <div class="slds-p-around_small">
-                <lightning-record-edit-form object-api-name={reservation_Object}  onsuccess={handleSuccess}
-                onerror={handleError}
-                >
+                <lightning-record-edit-form object-api-name={reservation_Object}  onsuccess={handleSuccess}>
 
                     <lightning-input-field field-name={reservationName}> </lightning-input-field>
                     <lightning-input-field field-name={reservationRoom} value={recordId}> </lightning-input-field>

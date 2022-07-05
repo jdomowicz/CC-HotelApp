@@ -5,7 +5,7 @@ This is your new Page <br/>
 <!-- End Default Content REMOVE THIS -->
 
 myName From Apex: {!Name}<br/>
-<apex:pageBlock Title = "Acc List">
+<apex:pageBlock Title="Acc List">
 <apex:pageBlockTable value="{!AccList}" var="acc">
 
 <apex:column value="{!acc.Name}"/>

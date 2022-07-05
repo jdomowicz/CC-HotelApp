@@ -14,7 +14,7 @@ Type:{!account.type}<br/>
 
 <!-- this is automatic values based on id (remove recordSetVar before)
 -->
-<apex:detail/>
+<apex:detail />
 
 <!-- List of all accounts - used with recordSetVar-->
 <apex:pageBlockTable value="{!Accounts}" var="acc">
@@ -22,6 +22,7 @@ Type:{!account.type}<br/>
     <apex:column value="{!acc.name}"/>
     <apex:column value="{!acc.type}"/>
     <apex:column value="{!acc.phone}"/>
+
 
 </apex:pageBlockTable>
 
