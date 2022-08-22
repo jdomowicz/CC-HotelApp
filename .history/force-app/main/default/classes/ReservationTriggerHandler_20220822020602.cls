@@ -10,14 +10,11 @@ public class ReservationTriggerHandler {
 
             contacts.add(r.Guest_name__r);
         }
-
         List<Contact> contactsToUpdate = GuestController.discountCalculator(contacts);
 
         update contactsToUpdate;
 
     }
-
-
     public static void beforeDeleteReservation(List<Reservation__c> reservations){
 
         for(Reservation__c r : reservations){
@@ -25,11 +22,8 @@ public class ReservationTriggerHandler {
             if(r.Cancelation_without_cost__c == false && r.Cancelation_fee_covered__c  == false){
 
             r.addError('You can not cancel this reservation without paying cancelation fee.');
-
             }
-
         }
-
     }
 
     // Create task to update Room Information
@@ -72,19 +66,16 @@ public class ReservationTriggerHandler {
         for(PricebookEntry pentry : breakfastList){
 
             if(pentry.Name.contains('Non-Vegeterian')){
-
                 mapBreakfast.put('Non-Vegeterian',pentry);
 
             }
             else if(pentry.Name.contains('Vegetarian')) {
-
                 mapBreakfast.put('Vegetarian',pentry);
             }
-
         }
 
 
-        list<Reservation__c> reservationQuery= [SELECT Id,Name,Guest_name__r.Name,Guest_name__r.Discount__c FROM Reservation__c WHERE Id IN: reservations];
+        list<Reservation__c> reservationQuery= [SELECT Id,Name,Guest_name__r.Name,Room__c,Guest_name__r.Discount__c FROM Reservation__c WHERE Id IN: reservations];
 
         map<Id,Reservation__c> reservationMap = new map<Id,Reservation__c>(reservationQuery);
 
@@ -94,6 +85,7 @@ public class ReservationTriggerHandler {
                 Name = r.Name + ' - ' + r.Days_number__c + ' stay. ' + reservationMap.get(r.Id).Guest_name__r.Name,
                 Product__c = defaultPricebook.Product2Id,
                 Reservation__c = r.Id,
+                Room__c = r.Room__c,
                 Quantity__c = r.Days_number__c,
                 Discount__c = reservationMap.get(r.Id).Guest_name__r.Discount__c,
                 List_Price__c =  defaultPricebook.UnitPrice * r.Days_number__c,
@@ -107,6 +99,7 @@ public class ReservationTriggerHandler {
                             Name = r.Name + ' - ' + mapBreakfast.get(r.Breakfast_Type__c).Name + ' Meal. ' + reservationMap.get(r.Id).Guest_name__r.Name,
                             Product__c = mapBreakfast.get(r.Breakfast_Type__c).Product2Id,
                             Reservation__c = r.Id,
+                            Room__c = r.Room__c,
                             Quantity__c = r.Days_number__c,
                             Discount__c = reservationMap.get(r.Id).Guest_name__r.Discount__c,
                             List_Price__c =  mapBreakfast.get(r.Breakfast_Type__c).UnitPrice * r.Days_number__c,
@@ -114,13 +107,10 @@ public class ReservationTriggerHandler {
                         );
 
             newReservations.add(breakfast);
-
             }
 
         }
-
         insert newReservations;
-
     }
 
 
@@ -142,7 +132,6 @@ public class ReservationTriggerHandler {
         for(Room__c r : roomWithReservations ){
 
         roomReservations.put(r.Id,r.Reservations__r);
-
         }
 
         set<Reservation__c> resInvalid = new set<Reservation__c>();
@@ -154,10 +143,16 @@ public class ReservationTriggerHandler {
 
 
                 if(
+                    // Resrvation overlaping and reservation after old created date
                     (res.Check_In_Date__c <= checkDupe.Check_In_Date__c && res.Check_out_Date__c <= checkDupe.Check_out_Date__c
-                    && res.Check_In_Date__c >= checkDupe.Check_In_Date__c) ||
-                    
-                    (res.Check_out_Date__c > checkDupe.Check_In_Date__c && res.Check_out_Date__c <= checkDupe.Check_out_Date__c)
+                    && res.Check_out_Date__c >= checkDupe.Check_In_Date__c) ||
+                    (res.Check_In_Date__c <= checkDupe.Check_In_Date__c && res.Check_out_Date__c >= checkDupe.Check_out_Date__c)||
+
+                    // Resrvation overlaping and reservation after old created date
+                    (res.Check_In_Date__c >= checkDupe.Check_In_Date__c && res.Check_out_Date__c >= checkDupe.Check_out_Date__c
+                    && res.Check_In_Date__c <= checkDupe.Check_out_Date__c) ||
+                    (res.Check_In_Date__c >= checkDupe.Check_In_Date__c && res.Check_out_Date__c <= checkDupe.Check_out_Date__c)
+
                     ){
                         resInvalid.add(res);
                     }

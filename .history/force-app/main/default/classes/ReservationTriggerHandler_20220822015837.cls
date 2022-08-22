@@ -10,14 +10,11 @@ public class ReservationTriggerHandler {
 
             contacts.add(r.Guest_name__r);
         }
-
         List<Contact> contactsToUpdate = GuestController.discountCalculator(contacts);
 
         update contactsToUpdate;
 
     }
-
-
     public static void beforeDeleteReservation(List<Reservation__c> reservations){
 
         for(Reservation__c r : reservations){
@@ -72,15 +69,12 @@ public class ReservationTriggerHandler {
         for(PricebookEntry pentry : breakfastList){
 
             if(pentry.Name.contains('Non-Vegeterian')){
-
                 mapBreakfast.put('Non-Vegeterian',pentry);
 
             }
             else if(pentry.Name.contains('Vegetarian')) {
-
                 mapBreakfast.put('Vegetarian',pentry);
             }
-
         }
 
 
@@ -94,7 +88,7 @@ public class ReservationTriggerHandler {
                 Name = r.Name + ' - ' + r.Days_number__c + ' stay. ' + reservationMap.get(r.Id).Guest_name__r.Name,
                 Product__c = defaultPricebook.Product2Id,
                 Reservation__c = r.Id,
-                Room__c = r.
+                Room__c = r.Room__c,
                 Quantity__c = r.Days_number__c,
                 Discount__c = reservationMap.get(r.Id).Guest_name__r.Discount__c,
                 List_Price__c =  defaultPricebook.UnitPrice * r.Days_number__c,
@@ -108,6 +102,7 @@ public class ReservationTriggerHandler {
                             Name = r.Name + ' - ' + mapBreakfast.get(r.Breakfast_Type__c).Name + ' Meal. ' + reservationMap.get(r.Id).Guest_name__r.Name,
                             Product__c = mapBreakfast.get(r.Breakfast_Type__c).Product2Id,
                             Reservation__c = r.Id,
+                            Room__c = r.Room__c,
                             Quantity__c = r.Days_number__c,
                             Discount__c = reservationMap.get(r.Id).Guest_name__r.Discount__c,
                             List_Price__c =  mapBreakfast.get(r.Breakfast_Type__c).UnitPrice * r.Days_number__c,
@@ -143,7 +138,6 @@ public class ReservationTriggerHandler {
         for(Room__c r : roomWithReservations ){
 
         roomReservations.put(r.Id,r.Reservations__r);
-
         }
 
         set<Reservation__c> resInvalid = new set<Reservation__c>();

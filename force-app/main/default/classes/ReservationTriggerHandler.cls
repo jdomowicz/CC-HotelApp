@@ -10,14 +10,11 @@ public class ReservationTriggerHandler {
 
             contacts.add(r.Guest_name__r);
         }
-
         List<Contact> contactsToUpdate = GuestController.discountCalculator(contacts);
 
         update contactsToUpdate;
 
     }
-
-
     public static void beforeDeleteReservation(List<Reservation__c> reservations){
 
         for(Reservation__c r : reservations){
@@ -25,11 +22,8 @@ public class ReservationTriggerHandler {
             if(r.Cancelation_without_cost__c == false && r.Cancelation_fee_covered__c  == false){
 
             r.addError('You can not cancel this reservation without paying cancelation fee.');
-
             }
-
         }
-
     }
 
     // Create task to update Room Information
@@ -72,15 +66,12 @@ public class ReservationTriggerHandler {
         for(PricebookEntry pentry : breakfastList){
 
             if(pentry.Name.contains('Non-Vegeterian')){
-
                 mapBreakfast.put('Non-Vegeterian',pentry);
 
             }
             else if(pentry.Name.contains('Vegetarian')) {
-
                 mapBreakfast.put('Vegetarian',pentry);
             }
-
         }
 
 
@@ -116,11 +107,9 @@ public class ReservationTriggerHandler {
                         );
 
             newReservations.add(breakfast);
-
             }
 
         }
-
         insert newReservations;
 
     }
@@ -144,7 +133,6 @@ public class ReservationTriggerHandler {
         for(Room__c r : roomWithReservations ){
 
         roomReservations.put(r.Id,r.Reservations__r);
-
         }
 
         set<Reservation__c> resInvalid = new set<Reservation__c>();
