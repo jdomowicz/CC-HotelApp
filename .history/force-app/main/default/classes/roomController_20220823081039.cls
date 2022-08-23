@@ -1,5 +1,12 @@
 public class roomController {
 
+    public class DATESRANGE{
+    @AuraEnabled
+    public String dateName {get;set;}
+     @AuraEnabled
+    public String dateValue {get;set;}
+
+    }
 
     public class FILTERSAPEX {
         @AuraEnabled
