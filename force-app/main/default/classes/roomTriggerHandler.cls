@@ -75,7 +75,9 @@ public class roomTriggerHandler {
 
                HotelToUpdate.add(r.Hotel__c);
             }
+
         }
+
        HotelDataUpdateQuable.HotelDataCountUpdate(HotelToUpdate);
 
     }
