@@ -6,7 +6,7 @@ public class ReservationTriggerTest {
 
 
        PricebookEntry defaultPricebook = [Select Id,Name,Product2Id,UnitPrice from PricebookEntry WHERE Product2.isApexDefaultReservation__c = true];
-       Contact guest = [SELECT Id,Name,FirstName,LastName from Contact  LIMIT 1];
+       Contact guest = [SELECT Id,Name,FirstName,LastName from Contact WHERE id = '0037Q0000068d7EQAQ'];
 
 
        Contact testContact = new Contact(

@@ -108,6 +108,7 @@ public class ReservationTriggerHandler {
 
             newReservations.add(breakfast);
             }
+
         }
         insert newReservations;
 
@@ -116,12 +117,14 @@ public class ReservationTriggerHandler {
 
     public static void checkIfRoomAvailable(List<Reservation__c> reservations){
 
+
     // Store all rooms from New reservations list
         List<Id> roomList = new list<Id>();
 
         for(Reservation__c rl :reservations){
         roomList.add(rl.Room__c);
         }
+
 
         map<Id,list<Reservation__c>> roomReservations = new map<Id,list<Reservation__c>>();
 

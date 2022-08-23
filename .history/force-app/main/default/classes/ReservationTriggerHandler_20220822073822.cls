@@ -108,6 +108,7 @@ public class ReservationTriggerHandler {
 
             newReservations.add(breakfast);
             }
+
         }
         insert newReservations;
 
