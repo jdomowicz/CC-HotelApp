@@ -29,7 +29,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     recordId;
     roomShow = false;
 
-
     @wire(MessageContext)
     messageContext;
 
@@ -48,7 +47,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     //  Handler for message received by component
     handleMessage(message) {
         this.hotelValue = message.hotelId;
-        this.roomShow = true;
         this.getRoomListDropdown();
     }
 
@@ -66,14 +64,5 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
         this.subscribeToMessageChannel();
 
     }
-
-     getSelectedName(event) {
-        const selectedRows = event.detail.selectedRows;
-        // Display that fieldName of the selected rows
-        for (let i = 0; i < selectedRows.length; i++) {
-            console.log('You selected: ' + selectedRows[i].Name);
-        }
-    }
-
 
 }

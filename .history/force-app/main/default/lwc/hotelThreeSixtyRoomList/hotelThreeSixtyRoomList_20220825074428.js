@@ -71,7 +71,7 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
         const selectedRows = event.detail.selectedRows;
         // Display that fieldName of the selected rows
         for (let i = 0; i < selectedRows.length; i++) {
-            console.log('You selected: ' + selectedRows[i].Name);
+            alert('You selected: ' + selectedRows[i].Name);
         }
     }
 

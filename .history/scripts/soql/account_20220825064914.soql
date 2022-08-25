@@ -3,4 +3,4 @@
 //     query text and running the command:
 //     SFDX: Execute SOQL Query with Currently Selected Text
 
-Select Id,Name,Hotel__r.Name,Available__c,Type__c,Room_Number__c from Room__c
+Select Id,Name,Hotel__r.Name 'hotelName',Available__c,Type__c,Room_Number__c from Room__c

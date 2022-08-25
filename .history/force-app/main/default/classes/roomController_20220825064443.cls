@@ -126,14 +126,13 @@ public class roomController {
 
     public static list<Room__c> roomList(list<Hotel__c> hlist){
 
-        list<Room__c> roomList = [Select Id,Name,Hotel__r.Name,Available__c,occupied__c,Mini_Bar__c,Jacuzzi__c,Air_Condition__c,Room_Number__c,Max_Number_of_Guests__c,Type__c,service__c from Room__c WHERE Hotel__c IN: hlist];
+        list<Room__c> roomList = [Select Id,Name,Available__c,Type__c,Room_Number__c from Room__c WHERE Hotel__c IN: hlist];
         return roomList;
     }
 
-
     @AuraEnabled(cacheable=true) public static list<Room__c> roomList(String h){
 
-        list<Room__c> roomList = [Select Id,Name,Hotel__r.Name,Available__c,occupied__c,Mini_Bar__c,Jacuzzi__c,Air_Condition__c,Room_Number__c,Max_Number_of_Guests__c,Type__c,service__c from Room__c WHERE Hotel__c =:h];
+        list<Room__c> roomList = [Select Id,Name,HotelAvailable__c,Type__c,Room_Number__c from Room__c WHERE Hotel__c =:h];
 
         return roomList;
     }

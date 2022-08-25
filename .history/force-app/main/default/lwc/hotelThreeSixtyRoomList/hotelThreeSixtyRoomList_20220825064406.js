@@ -9,26 +9,18 @@ import {
 } from 'lightning/messageService';
 
 const dataColumns = [
-    {label:'Room Number',fieldName:'Room_Number__c'},
     {label:'Name',fieldName:'Name'},
-    {label:'Type',fieldName:'Type__c'},
-    {label:'Max Number of Guests',fieldName:'Max_Number_of_Guests__c'},
-    {label:'Available',fieldName:'Available__c'},
-    {label:'Jacuzzi',fieldName:'Jacuzzi__c'}
-
+    {label:'Id',fieldName:'Id'}
 ];
-
-
 
 export default class HotelThreeSixtyRoomList extends LightningElement {
 
     subscription = null;
+
     roomList;
     dataColumns = dataColumns;
-    hotelValue;
+    hotelValue = 'a007Q00000AFc6GQAT';
     recordId;
-    roomShow = false;
-
 
     @wire(MessageContext)
     messageContext;
@@ -48,7 +40,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     //  Handler for message received by component
     handleMessage(message) {
         this.hotelValue = message.hotelId;
-        this.roomShow = true;
         this.getRoomListDropdown();
     }
 
@@ -66,14 +57,5 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
         this.subscribeToMessageChannel();
 
     }
-
-     getSelectedName(event) {
-        const selectedRows = event.detail.selectedRows;
-        // Display that fieldName of the selected rows
-        for (let i = 0; i < selectedRows.length; i++) {
-            console.log('You selected: ' + selectedRows[i].Name);
-        }
-    }
-
 
 }

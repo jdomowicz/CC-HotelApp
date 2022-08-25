@@ -9,26 +9,21 @@ import {
 } from 'lightning/messageService';
 
 const dataColumns = [
-    {label:'Room Number',fieldName:'Room_Number__c'},
     {label:'Name',fieldName:'Name'},
-    {label:'Type',fieldName:'Type__c'},
-    {label:'Max Number of Guests',fieldName:'Max_Number_of_Guests__c'},
-    {label:'Available',fieldName:'Available__c'},
-    {label:'Jacuzzi',fieldName:'Jacuzzi__c'}
-
+    {label:'Id',fieldName:'Id'},{label:'Name',fieldName:'Name'},
+    {label:'Id',fieldName:'Id'}
 ];
 
-
+Select Id,Name,Hotel__r.Name,Available__c,occupied__c,Mini_Bar__c,Jacuzzi__c,Air_Condition__c,Room_Number__c,Max_Number_of_Guests__c,Type__c,Room_Number__c,service__c from Room__c
 
 export default class HotelThreeSixtyRoomList extends LightningElement {
 
     subscription = null;
+
     roomList;
     dataColumns = dataColumns;
     hotelValue;
     recordId;
-    roomShow = false;
-
 
     @wire(MessageContext)
     messageContext;
@@ -48,7 +43,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     //  Handler for message received by component
     handleMessage(message) {
         this.hotelValue = message.hotelId;
-        this.roomShow = true;
         this.getRoomListDropdown();
     }
 
@@ -56,6 +50,7 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
 
         roomList({h: this.hotelValue }).then((result) => {
             this.roomList = result;
+        console.log(this.roomList);
         }).catch((error) => {
             console.error(error);
         })
@@ -66,14 +61,5 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
         this.subscribeToMessageChannel();
 
     }
-
-     getSelectedName(event) {
-        const selectedRows = event.detail.selectedRows;
-        // Display that fieldName of the selected rows
-        for (let i = 0; i < selectedRows.length; i++) {
-            console.log('You selected: ' + selectedRows[i].Name);
-        }
-    }
-
 
 }

@@ -1,14 +1,12 @@
 <template>
     <lightning-card title="Room list">
 
-        <template if:true={roomShow}>
+        <template if:true=""></template>
 <lightning-datatable
     key-field="Id"
     data={roomList}
-    columns={dataColumns}
-    onrowselection={getSelectedName}>
+    columns={dataColumns}>
     </lightning-datatable>
-    </template>
 
     </lightning-card>
 
