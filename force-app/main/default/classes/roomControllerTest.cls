@@ -1,24 +1,5 @@
-
 @isTest
 public with sharing class roomControllerTest {
-
-    public class FILTERSAPEX {
-        @AuraEnabled
-        public list<String> rooms {get;set;}
-        @AuraEnabled
-        public String city {get;set;}
-        @AuraEnabled
-        public String hotel {get;set;}
-        @AuraEnabled
-        public String country {get;set;}
-        @AuraEnabled
-        public String startDate {get;set;}
-        @AuraEnabled
-        public String endDate {get;set;}
-        @AuraEnabled
-        public String numberOfGuests {get;set;}
-
-}
 
     @TestSetup
     static void makeData(){
