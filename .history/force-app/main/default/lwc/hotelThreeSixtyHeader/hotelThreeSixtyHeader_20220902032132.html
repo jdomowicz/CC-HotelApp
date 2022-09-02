@@ -1,0 +1,26 @@
+<template>
+
+        <lightning-card>
+
+            <div class="slds-grid slds-gutters slds-p-horizontal_x-small">
+            <div class="slds-col">
+              <lightning-combobox name="Hotel" label="Hotel Name" value={hotelValue} placeholder="Select Hotel"
+                options={hotelSelectOptions} onchange={hotelChange}></lightning-combobox>
+                </div>
+                 <div class="slds-col">
+                <p>Hotel Rating</p>
+                </div>
+                 <div class="slds-col">
+                <p>Hotel TTM ACV</p>
+                </div>
+                <div class="slds-col">
+                <p>No of Rooms:</p>
+                </div>
+                </div>
+
+        </lightning-card>
+
+
+
+        
+</template>

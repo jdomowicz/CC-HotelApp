@@ -1,0 +1,33 @@
+<template>
+
+        <lightning-card>
+            <div class="slds-grid slds-gutters slds-p-horizontal_x-small">
+            <div class="slds-col">
+              <lightning-combobox name="Hotel" label="Hotel Name" value={hotelValue} placeholder="Select Hotel"
+                options={hotelSelectOptions} onchange={hotelChange}></lightning-combobox>
+                </div>
+                 <div class="slds-col">
+                <p>Hotel Rating</p>
+                </div>
+                 <div class="slds-col">
+                <p>Hotel TTM ACV</p>
+                </div>
+                <div class="slds-col">
+                <p>No of Rooms:</p>
+                </div>
+                </div>
+                 </div>
+                  </div>
+
+                  <div class="slds-page-header__row slds-page-header__row_gutters">
+    <div class="slds-page-header__col-details">
+      <ul class="slds-page-header__detail-row">
+        <li class="slds-page-header__detail-block">
+          <div class="slds-text-title slds-truncate" title="Field 1">Field 1</div>
+          <div class="slds-truncate" title="Description that demonstrates truncation with a long text field.">Description that demonstrates truncation with a long text field.</div>
+        </li>
+          </ul>
+    </div>
+
+        </lightning-card>
+</template>
