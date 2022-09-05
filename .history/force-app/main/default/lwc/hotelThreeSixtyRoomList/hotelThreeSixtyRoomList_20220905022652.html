@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Room list">
+
+        <template if:true={roomShow}>
+<lightning-datatable
+    key-field="Id"
+    data={roomList}
+    columns={dataColumns}
+    onrowselection={getSelectedName}>
+    </lightning-datatable>
+    </template>
+
+    <template if:false={roomShow}>
+        <p> Data not available!</p>
+    </template>
+    </lightning-card>
+
+    <lightnin-card title="">
+
+    </lightnin-card>
+</template>

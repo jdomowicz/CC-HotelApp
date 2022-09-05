@@ -1,0 +1,7 @@
+public with sharing class ReservationController {
+
+    @AuraEnabled (cacheable =true)
+    public static list<Reservation__c> reservationList() {
+
+    }
+}

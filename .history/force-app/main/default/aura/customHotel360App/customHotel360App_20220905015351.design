@@ -1,0 +1,11 @@
+<design:component label="3 section custom: 2-7-3">
+
+<flexipage:template>
+
+    <flexipage:region name="left" defaultWidth="SMALL"> </flexipage:region>
+    <flexipage:region name="center" defaultWidth="LARGE"> </flexipage:region>
+    <flexipage:region name="right" defaultWidth="SMALL"> </flexipage:region>
+
+</flexipage:template>
+
+</design:component>

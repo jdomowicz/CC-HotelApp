@@ -1,0 +1,10 @@
+<design:component label="2 section custom: 12-10">
+
+<flexipage:template>
+
+    <flexipage:region name="top" defaultWidth="LARGE"> </flexipage:region>
+    <flexipage:region name="bottom" defaultWidth="LARGE"> </flexipage:region>
+
+</flexipage:template>
+
+</design:component>

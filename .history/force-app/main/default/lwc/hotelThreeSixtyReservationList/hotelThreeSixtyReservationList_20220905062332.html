@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Reservation List">
+
+        <template if:true={roomShow}>
+          <lightning-datatable key-field="Id" data={resList} columns={dataColumns}>
+            </lightning-datatable>
+</template>
+    </lightning-card>
+</template>

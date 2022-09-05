@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Room list">
+
+        <template if:true={roomShow}>
+            <lightning-datatable key-field="Id" data={roomList} columns={dataColumns} onrowselection={getSelectedName}>
+            </lightning-datatable>
+        </template>
+
+        <template if:false={roomShow}>
+            <p> Data not available!</p>
+        </template>
+
+        <c-hotel-three-sixty-reservation-list get-room-ids=11111112222"></c-hotel-three-sixty-reservation-list>
+
+    </lightning-card>
+
+
+</template>
