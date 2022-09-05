@@ -3,4 +3,4 @@
 //     query text and running the command:
 //     SFDX: Execute SOQL Query with Currently Selected Text
 
-SELECT Guest_name__c from Reservation__c WHERE Room__c in 'a027Q000003GcKHQA0'
+SELECT Id,LastName from contact where Id IN (SELECT Guest_name__c,hotel from Reservation__c WHERE id = 'a027Q000003GcKHQA0')
