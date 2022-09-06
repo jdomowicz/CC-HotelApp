@@ -25,7 +25,7 @@ export default class HotelThreeSixtyGuestList extends LightningElement {
 
     connectedCallback(){
 
-        //this.getGuestList();
+        this.getGuestList();
 
     }
 

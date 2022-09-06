@@ -97,8 +97,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
 
     reservationList(event){
 
-        this.reservationIds = [];
-
         console.log('event details recived are :',event.detail);
         this.reservationIds = event.detail;
 
@@ -107,11 +105,9 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
 
     }
 
-    reservationListSelected(event){
+    reservationList(event){
 
-        this.reservationIds = [];
-
-        console.log('event details selected are :',event.detail);
+        console.log('event details recived are :',event.detail);
         this.reservationIds = event.detail;
 
         this.template.querySelector('c-hotel-three-sixty-guest-list').getGuestList(this.reservationIds);

@@ -15,7 +15,6 @@ dataColumns= dataColumns;
 resevationSize;
 reservationShow;
 reservationIds = [];
-selectedReservations = [];
 
 
    @api getReservationList(rooms) {
@@ -46,20 +45,14 @@ selectedReservations = [];
         })
 
     }
-
-    getSelectedName(event) {
-        this.selectedReservations = [];
+    
+getSelectedName(event) {
+        this.selectedRooms = [];
         const selectedRows = event.detail.selectedRows;
         // Display that fieldName of the selected rows
         for (let i = 0; i < selectedRows.length; i++) {
-            this.selectedReservations.push(selectedRows[i].Id);
+            this.selectedRooms.push(selectedRows[i].Id);
         }
-        console.log('selected Reservation are:', this.selectedReservations);
-
-         const selectedEventReservation = new CustomEvent('selected',{detail: this.selectedReservations});
-            // Dispatches the event.
-            this.dispatchEvent(selectedEventReservation);
-    }
 
 
 }

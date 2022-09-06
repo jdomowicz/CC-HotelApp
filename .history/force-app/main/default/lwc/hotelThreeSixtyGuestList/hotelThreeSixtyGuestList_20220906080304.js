@@ -12,7 +12,7 @@ export default class HotelThreeSixtyGuestList extends LightningElement {
 
     dataColumns = dataColumns;
     reservationList = [];
-    guestList = [];
+    guestList;
 
    @api getGuestList(guestsIds) {
         guestListfromReservation({ids: guestsIds}).then((result) => {
@@ -25,7 +25,7 @@ export default class HotelThreeSixtyGuestList extends LightningElement {
 
     connectedCallback(){
 
-        //this.getGuestList();
+        this.getGuestList();
 
     }
 

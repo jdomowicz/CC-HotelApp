@@ -56,9 +56,9 @@ selectedReservations = [];
         }
         console.log('selected Reservation are:', this.selectedReservations);
 
-         const selectedEventReservation = new CustomEvent('selected',{detail: this.selectedReservations});
+         const selectedEvent = new CustomEvent('displayed',{detail: this.reservationIds});
             // Dispatches the event.
-            this.dispatchEvent(selectedEventReservation);
+            this.dispatchEvent(selectedEvent);
     }
 
 

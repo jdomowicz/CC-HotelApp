@@ -97,25 +97,9 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
 
     reservationList(event){
 
-        this.reservationIds = [];
-
         console.log('event details recived are :',event.detail);
         this.reservationIds = event.detail;
-
-        this.template.querySelector('c-hotel-three-sixty-guest-list').getGuestList(this.reservationIds);
-        console.log('c-hotel-three-sixty-guest-list triggered');
-
-    }
-
-    reservationListSelected(event){
-
-        this.reservationIds = [];
-
-        console.log('event details selected are :',event.detail);
-        this.reservationIds = event.detail;
-
-        this.template.querySelector('c-hotel-three-sixty-guest-list').getGuestList(this.reservationIds);
-        console.log('c-hotel-three-sixty-guest-list triggered');
+        this.template.querySelector('c-hotel-three-sixty-guest-lis').getGuestList(this.reservationIds);
 
     }
 

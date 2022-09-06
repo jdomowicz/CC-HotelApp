@@ -96,7 +96,7 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     }
 
     reservationList(event){
-
+        
         this.reservationIds = [];
 
         console.log('event details recived are :',event.detail);
@@ -108,8 +108,6 @@ export default class HotelThreeSixtyRoomList extends LightningElement {
     }
 
     reservationListSelected(event){
-
-        this.reservationIds = [];
 
         console.log('event details selected are :',event.detail);
         this.reservationIds = event.detail;
