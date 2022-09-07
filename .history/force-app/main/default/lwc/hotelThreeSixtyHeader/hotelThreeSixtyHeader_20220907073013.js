@@ -18,7 +18,6 @@ export default class HotelThreeSixtyHeader extends LightningElement {
     hotelId;
     hotelSelectedData;
     hotelRating;
-    hotelTTMacv;
     ratingURL;
 
 
@@ -32,11 +31,10 @@ export default class HotelThreeSixtyHeader extends LightningElement {
             this.hotelList = [];
 
             result.forEach(element => {
-                this.hotelList = [...this.hotelList, { "label": element.Name, "value": element.Id, "Id": element.Id, "Rooms_Available__c": element.Rooms_Available__c, "Rating__c": element.Rating__c, "RatingStar": element.Rating_Stars__c ,"TTM_ACV__c": element.TTM_ACV__c}];
+                this.hotelList = [...this.hotelList, { "label": element.Name, "value": element.Id, "Id": element.Id, "Rooms_Available__c": element.Rooms_Available__c, "Rating__c": element.Rating__c, "RatingStar": element.Rating_Stars__c ,"TTM_ACV__c"}];
             });
             this.hotelValue = this.hotelList[0].Id;
             this.hotelRating = this.hotelList[0].Rating__c;
-            this.hotelTTMacv = this.hotelList[0].TTM_ACV__c;
             this.handleRatingStar(this.hotelRating);
 
             //Publish Message from Message Channel
@@ -55,7 +53,6 @@ export default class HotelThreeSixtyHeader extends LightningElement {
 
             this.hotelSelectedData = result;
             console.log('data retrived frm selectedHotelData = ', this.hotelSelectedData);
-            this.hotelTTMacv = this.hotelSelectedData.TTM_ACV__c;
             this.handleRatingStar(this.hotelSelectedData.Rating__c);
 
         }).catch((error) => {

@@ -3,4 +3,5 @@
 //     query text and running the command:
 //     SFDX: Execute SOQL Query with Currently Selected Text
 
-SELECT Status, NumberOfErrors FROM AsyncApexJob WHERE Id ='7077Q00000jbBpN'
+SELECT Status, NumberOfErrors
+    FROM AsyncApexJob WHERE Id ='7077Q00000jbBpN'

@@ -44,4 +44,8 @@ public class HotelDataUpdateQuable {
 
     }
 
+
+    public static void updateHotelMetrics(list<Id>){
+
+    }
 }

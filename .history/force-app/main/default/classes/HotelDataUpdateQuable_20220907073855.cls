@@ -8,11 +8,13 @@ public class HotelDataUpdateQuable {
     map<Id,Integer> HotelRentedleCT = new map<id,Integer>();
     list<Hotel__c> HotelUpdateList = new list<Hotel__c>();
 
+
     //Prepare DATA
 
     AggregateResult[] aggService = [SELECT Hotel__c , count(Id) ct from Room__c WHERE Hotel__c IN: recordIds  AND Service__c = TRUE GROUP BY Hotel__c];
 
     AggregateResult[] aggAvailable = [SELECT Hotel__c , count(Id) ct from Room__c WHERE Hotel__c IN: recordIds  AND service__c != TRUE AND occupied__c != TRUE  GROUP BY Hotel__c];
+
     AggregateResult[] aggOccupied = [SELECT Hotel__c , count(Id) ct from Room__c WHERE Hotel__c IN: recordIds  AND occupied__c = TRUE  GROUP BY Hotel__c];
 
 
@@ -43,5 +45,4 @@ public class HotelDataUpdateQuable {
     update HotelUpdateList;
 
     }
-
 }
