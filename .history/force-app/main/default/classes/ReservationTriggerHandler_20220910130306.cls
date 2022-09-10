@@ -58,6 +58,23 @@ public class ReservationTriggerHandler {
 
         List<Reservation_line_item__c> newReservations = new list<Reservation_line_item__c>();
 
+        PricebookEntry defaultPricebook = [Select Id,Name,Product2Id,UnitPrice from PricebookEntry WHERE Product2.isApexDefaultReservation__c = true AND Pricebook2.IsStandard = true];
+        list<PricebookEntry> breakfastList = [Select Id,Name,Product2Id,UnitPrice from PricebookEntry WHERE Product2.isApexDefaultBreakfast__c = true AND Pricebook2.IsStandard = true];
+
+        map<String,PricebookEntry> mapBreakfast = new map <String,PricebookEntry>();
+
+        for(PricebookEntry pentry : breakfastList){
+
+            if(pentry.Name.contains('Non-Vegeterian')){
+                mapBreakfast.put('Non-Vegeterian',pentry);
+
+            }
+            else if(pentry.Name.contains('Vegetarian')) {
+                mapBreakfast.put('Vegetarian',pentry);
+            }
+        }
+
+
         list<Reservation__c> reservationQuery= [SELECT Id,Name,Guest_name__r.Name,Room__c,Guest_name__r.Discount__c FROM Reservation__c WHERE Id IN: reservations];
 
         map<Id,Reservation__c> reservationMap = new map<Id,Reservation__c>(reservationQuery);

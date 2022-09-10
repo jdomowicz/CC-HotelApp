@@ -1,5 +1,5 @@
 public interface reservationLineI {
 
-    PricebookEntry reservationItem();
+    price reservationItem();
 
 }

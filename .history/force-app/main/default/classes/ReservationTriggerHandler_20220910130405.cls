@@ -58,6 +58,8 @@ public class ReservationTriggerHandler {
 
         List<Reservation_line_item__c> newReservations = new list<Reservation_line_item__c>();
 
+
+
         list<Reservation__c> reservationQuery= [SELECT Id,Name,Guest_name__r.Name,Room__c,Guest_name__r.Discount__c FROM Reservation__c WHERE Id IN: reservations];
 
         map<Id,Reservation__c> reservationMap = new map<Id,Reservation__c>(reservationQuery);
