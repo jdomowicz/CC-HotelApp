@@ -1,0 +1,20 @@
+<template>
+
+    <lightning-card>
+            <lightning-button label="Clone" onclick={cloneRecordHandler}> </lightning-button>
+
+            <lightning-record-view-form
+        record-id={newRecord}
+        object-api-name={Account}
+        density="compact"
+    >
+        <template if:true={showFields}>
+            <lightning-output-field field-name="Name"> </lightning-output-field>
+
+        </template>
+    </lightning-record-view-form>
+
+
+    </lightning-card>
+
+</template>

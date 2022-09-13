@@ -1,0 +1,24 @@
+public with sharing class CloneRecordController {
+
+
+    @AuraEnabled
+    public static Id cloneRecords(Id recordId, String className) {
+
+        Type classType = Type.forName(className);
+
+
+         //CloneRecordInterface cloneInterfaceInstance = new CloneAcccounts();
+        CloneRecordInterface cloneInterfaceInstance = (CloneRecordInterface)classType.newInstance();
+
+        // Trigger CloneRecordService Constructor Method to construct class of type CloneRecordInterface and implementation given in cloneInterfaceInstance variable
+         //CloneRecordService cloneRecords = new CloneAcccounts();
+
+        CloneRecordService cloneRecordsServiceInstace = new CloneRecordService(cloneInterfaceInstance);
+
+        // Trigger method that clones the record;
+        Id createdRecord = cloneRecordsServiceInstace.cloneRecords(recordId);
+
+        return createdRecord;
+
+    }
+}

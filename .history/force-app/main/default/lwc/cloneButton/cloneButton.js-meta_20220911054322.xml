@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    Trying to pass a default value to an @api decorated property, somehow I get undefined variable, here is my code meta.xml    <?xml version="1.0" encoding="UTF-8"?>
+
+    <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="mroConsumptionTable">
+        <apiVersion>46.0</apiVersion>
+        <isExposed>true</isExposed>
+        <targets>
+            <target>lightning__AppPage</target>
+        </targets>
+        <targetConfigs>
+            <targetConfig targets="lightning__AppPage">
+                <property name="type" label="Per slot array" type="String" default="Single Rate" required="true" />
+            </targetConfig>
+        </targetConfigs>
+
+
+</LightningComponentBundle>

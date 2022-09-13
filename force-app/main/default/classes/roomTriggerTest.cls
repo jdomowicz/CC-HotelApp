@@ -67,6 +67,7 @@ try{
     }
 
 
+
 Test.stopTest();
 
 list<Room__c> roomsInserted = [Select Id from Room__c];
