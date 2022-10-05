@@ -6,6 +6,7 @@ public with sharing class CloneRecordController {
 
         Type classType = Type.forName(className);
 
+
          //CloneRecordInterface cloneInterfaceInstance = new CloneAcccounts();
         CloneRecordInterface cloneInterfaceInstance = (CloneRecordInterface)classType.newInstance();
 

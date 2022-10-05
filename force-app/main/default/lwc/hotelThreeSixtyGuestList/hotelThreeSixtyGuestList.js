@@ -1,5 +1,5 @@
 import { LightningElement,api } from 'lwc';
-import guestListfromReservation from '@salesforce/apex/guestController.guestListfromReservation';
+import guestListfromReservation from '@salesforce/apex/GuestController.guestListfromReservation';
 
 const dataColumns = [
 
