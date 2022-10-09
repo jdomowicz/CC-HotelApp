@@ -1,0 +1,42 @@
+<template>
+    <lightning-card>
+
+        <div class="slds-grid">
+
+            <div class="slds-col slds-size_9-of-12" onkeyup={handleKeyUp}>
+                <lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search" variant="label-hidden" class="slds-p-left_x-small">
+                </lightning-input>
+            </div>
+
+            <div class="slds-col slds-size_3-of-12 slds-align_absolute-center">
+
+                <!-- Brand variant: Identifies the primary action in a group of buttons -->
+                <lightning-button variant="brand-outline" label="Search For Recipes!" title="Primary action" onclick={handleSearch}
+                   class="slds-p-left_x-small" ></lightning-button>
+
+                <!-- Brand outline variant: Identifies the primary action in a group of buttons, but has a lighter look -->
+                <lightning-button variant="brand" label="Radom Recipe" title="Primary action with lighter look"
+                    onclick={handleClick} class="slds-p-left_x-small"></lightning-button>
+
+            </div>
+
+        </div>
+
+
+            <ul class="slds-m-around_medium">
+            <template for:each={recipedata} for:item="recipe">
+                <li key={recipe.Id}>
+                    <div class="slds-box">
+                    <p> Title : {recipe.title} </p>
+                     <img style="max-height: 400px" alt="placeholder" src={recipe.image}/>
+                    </div>
+                </li>
+            </template>
+        </ul>
+
+        <c-recipe>
+        </c-recipe>
+
+
+    </lightning-card>
+</template>

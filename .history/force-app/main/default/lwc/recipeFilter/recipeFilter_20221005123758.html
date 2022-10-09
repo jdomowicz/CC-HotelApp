@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+
+
+        <div class="slds-grid">
+
+            <div class="slds-col slds-size_10-of-12 slds-m-left_x-small" onkeyup={handleKeyUp}>
+                <lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search" variant="label-hidden">
+                </lightning-input>
+            </div>
+
+            <div class="slds-col slds-size_2-of-12 slds-m-left_x-small">
+
+                <!-- Brand variant: Identifies the primary action in a group of buttons -->
+                <lightning-button variant="brand" label="Search For Recipes!" title="Primary action" onclick={handleClick}
+                   class="slds-p-left_x-small" ></lightning-button>
+
+                <!-- Brand outline variant: Identifies the primary action in a group of buttons, but has a lighter look -->
+                <lightning-button variant="brand-outline" label="Radom Recipe." title="Primary action with lighter look"
+                    onclick={handleClick} class="slds-p-left_x-small"></lightning-button>
+
+            </div>
+
+        </div>
+
+
+
+
+    </lightning-card>
+</template>

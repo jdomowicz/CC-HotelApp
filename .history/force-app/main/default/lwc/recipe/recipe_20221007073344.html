@@ -1,0 +1,24 @@
+<template>
+
+    <lightning-card>
+
+       <template if:true={showTemplate}>
+
+
+         <template for:each={recipedata} for:item="recipe">
+
+            <li key={recipe.Id}>
+                    <!--Recipe Box-->
+                    <div class="slds-box"><div></div>
+                        <!--Recipe Title-->
+                        <div class="slds-text-heading_medium slds-p-bottom_small"> {recipe.title} </div>
+
+                        <!--Grid to fit objects horizontal-->
+                        
+               
+            </template>
+
+        </template>
+
+    </lightning-card>
+</template>

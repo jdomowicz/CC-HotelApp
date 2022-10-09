@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Recipes!">
+
+
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_small">Seach for Recipes!!</h1>
+        </div>
+
+        <div class="slds-grid">
+
+            <div class="slds-col slds-size_10-of-12 slds-m-left_x-small" onkeyup={handleKeyUp}>
+                <lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search">
+                </lightning-input>
+            </div>
+
+            <div class="slds-col slds-size_2-of-12 slds-align_absolute-center">
+                <!-- Brand variant: Identifies the primary action in a group of buttons -->
+                <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick}
+                   class="slds-p-left_x-small slds-m-top_medium slds-m-top_medium" ></lightning-button>
+
+                <!-- Brand outline variant: Identifies the primary action in a group of buttons, but has a lighter look -->
+                <lightning-button variant="brand-outline" label="Brand Outline" title="Primary action with lighter look"
+                    onclick={handleClick} class="slds-p-left_x-small"></lightning-button>
+
+            </div>
+
+
+        </div>
+
+        <p if:true={queryTerm}>
+            Searched for {queryTerm}!
+        </p>
+
+
+
+    </lightning-card>
+</template>
