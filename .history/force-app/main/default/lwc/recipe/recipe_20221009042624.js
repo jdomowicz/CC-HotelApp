@@ -8,7 +8,7 @@ export default class Recipe extends LightningElement {
 showTemplate = false;
 @api itemName;
 recipedata = [];
-recipeItem;
+recipeItem
 isnum;
 
 checkIfNum(){
@@ -38,7 +38,7 @@ recipeHandler(){
         getRecipeById({ receipeId: this.itemName })
             .then((data) => {
                 console.log(data);
-                this.recipeItem = data;
+                this.recipedata = data;
                 this.showTemplate = true;
 
             })

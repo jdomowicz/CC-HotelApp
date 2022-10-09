@@ -25,7 +25,7 @@
                                 <p class="slds-text-title slds-border_bottom slds-p-bottom_x-small"> <strong>Dish
                                         Type</strong> </p>
 
-                                <template for:each={recipeItem.dishTypes} for:item="type">
+                                <template for:each={recipedata.dishTypes} for:item="type">
                                     <li key={type} class="slds-m-around_small">
                                         <strong>-</strong> {type}
                                     </li>
@@ -35,7 +35,7 @@
                                 <p class="slds-text-title slds-border_bottom slds-p-bottom_x-small slds-p-top_x-small">
                                     <strong>Health
                                         Score:</strong>&nbsp;&nbsp;
-                                    {recipeItem.healthScore}
+                                    {recipedata.healthScore}
                                 </p>
 
                             </div>
@@ -48,7 +48,7 @@
                                     <strong>Summary</strong>
                                 </p>
 
-                                <p class="slds-text-color_weak"> {recipeItem.summary}</p>
+                                <p class="slds-text-color_weak"> {recipedata.summary}</p>
                             </div>
 
                         </div>
