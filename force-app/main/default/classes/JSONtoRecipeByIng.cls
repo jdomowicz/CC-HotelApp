@@ -14,4 +14,3 @@ public with sharing class JSONtoRecipeByIng {
 		return (List<JSONtoRecipeByIng>) System.JSON.deserialize(json, List<JSONtoRecipeByIng>.class);
 	}
 }
-
