@@ -32,4 +32,4 @@ DataCreator dc = new DataCreator();
 system.debug(dc);
 
 
-Account acc = (Account) DataCreator.createRecord(Account.sObjectType);
+Account account = (Account) DataCreator.createRecord(Account.sObjectType);

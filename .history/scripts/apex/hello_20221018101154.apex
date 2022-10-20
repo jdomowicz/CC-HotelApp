@@ -28,8 +28,3 @@ DataFactory d = new DataFactory();
 system.debug(d);
 
 
-DataCreator dc = new DataCreator();
-system.debug(dc);
-
-
-Account acc = (Account) DataCreator.createRecord(Account.sObjectType);
