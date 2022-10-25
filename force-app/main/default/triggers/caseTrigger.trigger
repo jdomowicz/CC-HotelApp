@@ -15,6 +15,3 @@ trigger caseTrigger on Case (after insert) {
   update newCases;
 
 }
-
-
-
