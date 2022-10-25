@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Account Details">
+
+        <lightning-datatable data={accList} columns={columns} key-field="Id" onrowselection={getSelectedContacts}>
+        </lightning-datatable>
+
+        <template if:true ={accListWithContact}>
+        <ul class="slds-m-around_medium">
+            <template for:each={accListWithContact} for:item="acc">
+                <li key={acc.Id}>
+                    {acc.Name}, {contact.Title}
+                </li>
+            </template>
+        </ul>
+        </template>
+
+    </lightning-card>
+</template>

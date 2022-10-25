@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Account Details">
+<lightning-datatable
+        data={accList}
+        columns={columns}
+        key-field="Id"
+        onrowselection={getSelectedName}
+    >
+    </lightning-datatable>
+    </lightning-card>
+</template>
