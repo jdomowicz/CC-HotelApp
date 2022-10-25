@@ -1,6 +1,0 @@
-// Use .soql files to store SOQL queries.
-// You can execute queries in VS Code by selecting the
-//     query text and running the command:
-//     SFDX: Execute SOQL Query with Currently Selected Text
-
-Select Id,Name,Hotel__r.Name 'hotelName,Available__c,Type__c,Room_Number__c from Room__c
