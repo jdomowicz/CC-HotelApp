@@ -2,6 +2,7 @@ import { LightningElement, wire } from 'lwc';
 import getAccountList from '@salesforce/apex/AccountsWithContacts.accountList';
 import ACCOUNT_DATA from '@salesforce/apex/AccountsWithContacts.accountData';
 import getAccountWithContact from '@salesforce/apex/AccountsWithContacts.accountWithContacts';
+import SystemModstamp from '@salesforce/schema/AcceptedEventRelation.SystemModstamp';
 
 const columns = [
 
@@ -22,9 +23,9 @@ const Contactcolumns = [
 export default class AccountDetailsTable extends LightningElement {
 
     accList = [];
-    accListWithContact //= [
-     //   {}
-  //  ];
+    accListWithContact = [
+        {}
+    ];
 
     showDetailsValue = 0;
 
@@ -65,6 +66,9 @@ export default class AccountDetailsTable extends LightningElement {
             });
     }
 
+    connectedCallback() {
+        this.loadAccountData();
+    }
 
     getSelectedContacts(event) {
 

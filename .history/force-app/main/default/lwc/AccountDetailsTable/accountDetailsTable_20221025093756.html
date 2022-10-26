@@ -9,9 +9,16 @@
                 <template for:each={accListWithContact} for:item="acc">
                     <li key={acc.Id}>
                         {acc.Name}, {acc.Id}
-                <lightning-datatable data={Contacts} columns={Contactcolumns} key-field="Id">
+                <!--<lightning-datatable data={Contacts} columns={columns} key-field="Id">
                         </lightning-datatable>
 
+                        -->
+
+                          <template for:each={Contact} for:item="contact">
+                    <li key={contact.Id}>
+                        {contact.Name}, {contact.Id}
+                    </li>
+                </template>
 
                 </li>
         </template>

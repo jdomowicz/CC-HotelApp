@@ -65,6 +65,9 @@ export default class AccountDetailsTable extends LightningElement {
             });
     }
 
+    connectedCallback() {
+        this.();
+    }
 
     getSelectedContacts(event) {
 

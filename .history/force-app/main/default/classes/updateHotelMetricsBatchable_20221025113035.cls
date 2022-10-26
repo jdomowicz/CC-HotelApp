@@ -27,6 +27,7 @@ public with sharing class updateHotelMetricsBatchable implements Database.Batcha
             else{
                     h.TTM_ACV__c = 0;
                 }
+
         hotelToUpdate.add(h);
         }
 
