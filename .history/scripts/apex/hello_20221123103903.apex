@@ -13,11 +13,9 @@ Id accId = [Select Id from Account LIMIT 1].Id;
 Id oppId = [Select Id from Opportunity LIMIT 1].Id;
 
 cloneAccount accLogic = new cloneAccount();
-cloneOppty oppLogic = new cloneOppty();
 
-
-CloneInterface cloneLogic = (CloneInterface)accLogic;
-CloneInterface cloneLogic2 = (CloneInterface)oppLogic;
+CloneInterface cloneLogic = (CloneInterface).accLogic;
 
 cloneLogic.cloneRecord(accId);
-cloneLogic2.cloneRecord(oppId);
+
+cloneLogic.cloneRecord(oppId);

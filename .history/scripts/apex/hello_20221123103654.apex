@@ -9,15 +9,5 @@
 //RESTOppty.getOppty('0067R00001v4GRLQA2');
 
 
-Id accId = [Select Id from Account LIMIT 1].Id;
-Id oppId = [Select Id from Opportunity LIMIT 1].Id;
-
-cloneAccount accLogic = new cloneAccount();
-cloneOppty oppLogic = new cloneOppty();
-
-
-CloneInterface cloneLogic = (CloneInterface)accLogic;
-CloneInterface cloneLogic2 = (CloneInterface)oppLogic;
-
-cloneLogic.cloneRecord(accId);
-cloneLogic2.cloneRecord(oppId);
+Id accId = [Select Id from Account LIMIT 1];
+cloneAccount accountToClone = new cloneAccount();

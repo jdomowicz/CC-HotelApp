@@ -17,7 +17,7 @@ cloneOppty oppLogic = new cloneOppty();
 
 
 CloneInterface cloneLogic = (CloneInterface)accLogic;
-CloneInterface cloneLogic2 = (CloneInterface)oppLogic;
+CloneInterface cloneLogic2 = (CloneInterface).oppLogic;
 
 cloneLogic.cloneRecord(accId);
 cloneLogic2.cloneRecord(oppId);

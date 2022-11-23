@@ -1,0 +1,16 @@
+public with sharing class CloneRecords_Service {
+
+
+    //Instanciete interface class
+    private CloneInterface cloneLogic;
+
+    // creating class constructor
+    //passing cloneInterface as argument
+    // assiging clone
+    public CloneRecords_Service(CloneInterface cloneClass) {
+
+        this.cloneLogic = cloneClass;
+
+
+    }
+}
