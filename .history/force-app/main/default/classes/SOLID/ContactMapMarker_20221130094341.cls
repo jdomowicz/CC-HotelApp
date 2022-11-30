@@ -2,7 +2,7 @@ public with sharing class ContactMapMarker implements IMapMarker{
 
     public list<sObject> getRecords(){
 
-        return [SELECT Id, Name, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingStreet FROM Contact WHERE MailingCountry <>Null LIMIT 20];
+        return [SELECT Id, Name, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingStreet FROM Contact];
     }
 
     public list<Object> wrapRecordForUI(list<sObject> sObjectRecords){
@@ -20,7 +20,7 @@ public with sharing class ContactMapMarker implements IMapMarker{
             location.PostalCode = c.MailingPostalCode;
 
 
-            marker.description = 'This is Contact description.';
+            marker.description = 'This is Hotel description.';
             marker.title = c.Name;
             marker.location = location;
 

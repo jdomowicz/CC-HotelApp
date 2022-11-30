@@ -2,7 +2,7 @@ public with sharing class ContactMapMarker implements IMapMarker{
 
     public list<sObject> getRecords(){
 
-        return [SELECT Id, Name, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingStreet FROM Contact WHERE MailingCountry <>Null LIMIT 20];
+        return [SELECT Id, Name, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingStreet FROM Contact WHERE MailingCity <>Null LIMIT 20];
     }
 
     public list<Object> wrapRecordForUI(list<sObject> sObjectRecords){
