@@ -12,5 +12,4 @@
 
 SELECT Id, No_of_Contacts__c FROM Account
 
-SELECT Id,Name,MailingAddress from Contact
-
+SELECT Id,Name,Country__c,city__c,zip_code__c,Street__c, from Hotel__c LIMIT 5
