@@ -4,7 +4,9 @@ trigger OpportunityTrigger on Opportunity (before update,after insert) {
 
     when AFTER_INSERT{
 
+      system.debug(Trigger.New);
       OpportunityTriggerHandler.sendHTTPRequest(Trigger.New);
+
 
     }
     when BEFORE_INSERT{
@@ -14,4 +16,3 @@ trigger OpportunityTrigger on Opportunity (before update,after insert) {
   }
 
 }
-

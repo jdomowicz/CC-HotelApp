@@ -8,7 +8,6 @@ trigger OpportunityTrigger on Opportunity (before update,after insert) {
       OpportunityTriggerHandler.sendHTTPRequest(Trigger.New);
 
 
-
     }
     when BEFORE_INSERT{
 
