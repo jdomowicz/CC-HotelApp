@@ -14,15 +14,15 @@ public with sharing class HotelMapMarker implements IMapMarker{
             MapMarker marker = new MapMarker();
            // MapLocation location = new MapLocation();
 
-            marker.location.City = h.City__c;
-            marker.location.Country = h.Country__c;
-            marker.location.Street = h.Street__c;
-            marker.location.PostalCode = h.zip_code__c;
+            location.City = h.City__c;
+            location.Country = h.Country__c;
+            location.Street = h.Street__c;
+            location.PostalCode = h.zip_code__c;
 
 
             marker.description = 'This is Hotel description.';
             marker.title = h.Name;
-            //marker.location = location;
+            marker.location = location;
 
             mapMarkersList.add(marker);
 

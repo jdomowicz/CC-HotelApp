@@ -1,21 +1,17 @@
 public class MapMarker {
 
-	public mapMarker(){
-
-		this.location = new mapLocationMarkers();
-
-	}
-
     @AuraEnabled
-	public mapLocationMarkers location;
+	public MapLocation location;
 	@AuraEnabled
 	public String title;
 	@AuraEnabled
 	public String description;
 
 
-	public class mapLocationMarkers{
-	@AuraEnabled
+
+	public mapLocationMarkers{
+
+		@AuraEnabled
 	public String Street;
 	@AuraEnabled
 	public String City;

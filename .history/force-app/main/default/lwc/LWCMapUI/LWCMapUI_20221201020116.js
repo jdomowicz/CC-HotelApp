@@ -11,7 +11,7 @@ export default class LWCMapUI extends LightningElement {
         IUMapMarkerController({ objectType: this.objectApiName,uiType:'MapMarker' })
             .then((result) => {
                 this.mapMarkers = result;
-                console.log(result);
+                system.debug();
             })
             .catch((error) => {
                 this.error = error;

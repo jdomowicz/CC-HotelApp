@@ -22,7 +22,7 @@ public with sharing class ContactMapMarker implements IMapMarker{
 
             marker.description = 'This is Contact description.';
             marker.title = c.Name;
-            //marker.location = location;
+            marker.location = location;
 
             mapMarkersList.add(marker);
 

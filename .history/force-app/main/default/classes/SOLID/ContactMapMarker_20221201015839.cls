@@ -17,12 +17,12 @@ public with sharing class ContactMapMarker implements IMapMarker{
             marker.location.City = c.MailingCity;
             marker.location.Country = c.MailingCountry;
             marker.location.Street = c.MailingStreet;
-            marker.location.PostalCode = c.MailingPostalCode;
+            location.PostalCode = c.MailingPostalCode;
 
 
             marker.description = 'This is Contact description.';
             marker.title = c.Name;
-            //marker.location = location;
+            marker.location = location;
 
             mapMarkersList.add(marker);
 

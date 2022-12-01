@@ -22,7 +22,7 @@ public with sharing class HotelMapMarker implements IMapMarker{
 
             marker.description = 'This is Hotel description.';
             marker.title = h.Name;
-            //marker.location = location;
+            marker.location = location;
 
             mapMarkersList.add(marker);
 

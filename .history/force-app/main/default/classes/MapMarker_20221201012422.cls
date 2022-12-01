@@ -1,20 +1,22 @@
 public class MapMarker {
 
-	public mapMarker(){
+	MapLocationData location;
 
-		this.location = new mapLocationMarkers();
+	public MapMarker(){
 
+		this.location = map
 	}
 
     @AuraEnabled
-	public mapLocationMarkers location;
+	public MapLocationData location;
 	@AuraEnabled
 	public String title;
 	@AuraEnabled
 	public String description;
 
 
-	public class mapLocationMarkers{
+
+	public class MapLocationData {
 	@AuraEnabled
 	public String Street;
 	@AuraEnabled
@@ -23,7 +25,7 @@ public class MapMarker {
 	public String Country;
 	@AuraEnabled
 	public String PostalCode;
-	}
 
+	}
 
 }

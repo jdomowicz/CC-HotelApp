@@ -1,5 +1,7 @@
 public class MapMarker {
 
+
+
 	public mapMarker(){
 
 		this.location = new mapLocationMarkers();

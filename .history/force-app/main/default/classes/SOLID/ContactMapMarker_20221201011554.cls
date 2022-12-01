@@ -12,9 +12,10 @@ public with sharing class ContactMapMarker implements IMapMarker{
             for(Contact c: (list<Contact>)sObjectRecords){
 
             MapMarker marker = new MapMarker();
-            //MapLocation location = new MapLocation();
+           // MapLocation location = new MapLocation();
 
-            marker.location.City = c.MailingCity;
+            marker.City = c.MailingCity;
+
             marker.location.Country = c.MailingCountry;
             marker.location.Street = c.MailingStreet;
             marker.location.PostalCode = c.MailingPostalCode;
