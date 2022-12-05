@@ -19,14 +19,13 @@ Opportunity opp = new Opportunity(
     OwnerId = usrId
 );
 
-Opportunity opp2 = new Opportunity(
+Opportunity opp2 = new Opportunity{
     Name = 'test Oppty 2',
     Type= 'Service',
     CloseDate = date.newInstance(2023, 12, 12),
     OwnerId = usrId
-);
+};
 
 oppList.add(opp);
 oppList.add(opp2);
-
-caseClose_Service.closeOpptys(oppList);
+system.debug(oppList);

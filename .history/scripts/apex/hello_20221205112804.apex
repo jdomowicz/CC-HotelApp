@@ -28,5 +28,4 @@ Opportunity opp2 = new Opportunity(
 
 oppList.add(opp);
 oppList.add(opp2);
-
-caseClose_Service.closeOpptys(oppList);
+system.debug(oppList);
