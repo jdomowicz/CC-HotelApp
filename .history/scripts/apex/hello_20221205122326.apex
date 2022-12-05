@@ -15,7 +15,7 @@ list<Opportunity> oppList = new list<Opportunity>();
 Opportunity opp = new Opportunity(
     Name = 'test Oppty 1',
     Type= 'Sales',
-    StageName = 'Prospecting',
+    StageName = 'Prospecting'
     CloseDate = date.newInstance(2023, 12, 12),
     OwnerId = usrId
 );

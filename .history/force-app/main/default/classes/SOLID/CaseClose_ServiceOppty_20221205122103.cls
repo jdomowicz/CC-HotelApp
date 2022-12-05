@@ -1,15 +1,15 @@
-public with sharing class CaseClose_SalesOppty implements ICaseClose {
+public with sharing class CaseClose_ServiceOppty implements ICaseClose {
 
 
     public static void determineIfClose(List<Opportunity> OpptyList){
 
-        system.debug('Sales class called!');
+        system.debug();
 
         List<Opportunity> oppList = new list<Opportunity>();
 
         for(Opportunity opp : OpptyList){
 
-            opp.StageName = 'Closed Won';
+            opp.StageName = 'Closed - Service';
             oppList.add(opp);
         }
 

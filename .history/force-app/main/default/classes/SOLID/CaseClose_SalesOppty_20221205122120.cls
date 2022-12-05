@@ -9,7 +9,7 @@ public with sharing class CaseClose_SalesOppty implements ICaseClose {
 
         for(Opportunity opp : OpptyList){
 
-            opp.StageName = 'Closed Won';
+            opp.StageName = 'Closed - Won';
             oppList.add(opp);
         }
 
