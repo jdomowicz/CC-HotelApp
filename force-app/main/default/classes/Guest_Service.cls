@@ -5,7 +5,6 @@ public with sharing class Guest_Service {
         /*
         Create list for each type of customer
         */
-
         list<contact> vipContacts = new list<contact>();
         list<contact> standardContacts = new list<contact>();
         list<contact> internalContacts = new list<contact>();

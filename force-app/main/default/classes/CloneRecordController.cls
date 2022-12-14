@@ -1,24 +1,36 @@
 public with sharing class CloneRecordController {
 
-
+    /*
+    This class is generic end will not end. It is coresponding to CloneRecord_Service(clone service is used only to instanciete CloneInterface) and implement cloneAccount or cloneOppty or any other class that implement CloneInterface.
+    */
+    // Pass the clone record id and class type!
     @AuraEnabled
-    public static Id cloneRecords(Id recordId, String className) {
+    public static void cloneRecord(Id recordId, String ClassName) {
 
-        Type classType = Type.forName(className);
+        Type cloneClassType = type.forName(ClassName);
 
-
-         //CloneRecordInterface cloneInterfaceInstance = new CloneAcccounts();
-        CloneRecordInterface cloneInterfaceInstance = (CloneRecordInterface)classType.newInstance();
-
-        // Trigger CloneRecordService Constructor Method to construct class of type CloneRecordInterface and implementation given in cloneInterfaceInstance variable
-         //CloneRecordService cloneRecords = new CloneAcccounts();
-
-        CloneRecordService cloneRecordsServiceInstace = new CloneRecordService(cloneInterfaceInstance);
-
-        // Trigger method that clones the record;
-        Id createdRecord = cloneRecordsServiceInstace.cloneRecords(recordId);
-
-        return createdRecord;
+        // Crete new instance of CloneInterface depending on cloneClassType variable
+        // CloneInterface CloneInterfaceInstance = (CloneInterface)cloneAccount;
+        // CloneInterface CloneInterfaceInstance = (CloneInterface)cloneOppty;
+        CloneInterface CloneInterfaceInstance = (CloneInterface)cloneClassType.newInstance();
+        // Instanciete CloneRecords_Service. CloneRecord_Service class contain constructor which instanciete CloneAccount/CloneOppty
+        CloneRecords_Service cloneRecord = new CloneRecords_Service(CloneInterfaceInstance);
+       // CloneInterfaceInstance.CloneRecord(recordId);
+        cloneRecord.CloneRecord(recordId);
 
     }
+
+
+    @AuraEnabled
+    public static void cloneRelatedRecords(Id recordId, String ClassName) {
+
+        Type cloneClassType = type.forName(ClassName);
+        // Crete new instance of CloneInterface depending on cloneClassType variable
+        CloneInterface CloneInterfaceInstance = (CloneInterface)cloneClassType.newInstance();
+        // Instanciete CloneRecords_Service. CloneRecord_Service class contain constructor which instanciete CloneAccount/CloneOppty
+        CloneRecords_Service cloneRecord = new CloneRecords_Service(CloneInterfaceInstance);
+        cloneRecord.cloneRelatedRecords(recordId);
+
+    }
+
 }

@@ -32,6 +32,7 @@ recipeHandler(){
 
 }
 
+
 //Handle recipe by Id
      handleRecipe() {
         getRecipeById({ receipeId: this.itemName })
@@ -66,5 +67,6 @@ recipeHandler(){
         this.checkIfNum();
         this.recipeHandler();
     }
+
 
 }

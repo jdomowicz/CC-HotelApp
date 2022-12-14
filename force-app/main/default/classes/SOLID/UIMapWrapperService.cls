@@ -25,5 +25,3 @@ public with sharing class UIMapWrapperService {
     }
 
     }
-
-

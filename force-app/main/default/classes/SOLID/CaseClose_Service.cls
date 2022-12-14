@@ -13,6 +13,7 @@ private static void closeOpptyLogicInstanceExecute(list<Opportunity> OpptyList, 
 
 }
 
+
 public static void closeOpptys(List<Opportunity> opptyList){
 
     for(String classType : pickOpptyTypetoClose.keySet()){

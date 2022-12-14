@@ -10,7 +10,7 @@ public with sharing class IUMapMarkerController {
 
         list<Object> recordsforUI = UIMapWrapperService.wrapRecordForUI(UIMapWrapperService.getRecords(objectType,uiType));
 
-        return recordsforUI;YubiAuthForAloha
+        return recordsforUI;
 
     }
 
