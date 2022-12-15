@@ -5,4 +5,11 @@ public with sharing class Consts {
             return ContactConsts.INSTANCE;
         }
     }
+
+     public static final AccountConsts ACCOUNT {
+        get {
+            return AccountConsts.INSTANCE;
+            
+        }
+    }
 }

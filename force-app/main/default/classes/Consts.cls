@@ -9,6 +9,7 @@ public with sharing class Consts {
      public static final AccountConsts ACCOUNT {
         get {
             return AccountConsts.INSTANCE;
+            
         }
     }
 }
