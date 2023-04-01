@@ -53,7 +53,7 @@ public class roomMaintenance {
 
 
         //Prepare data
-        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id =: hotelId];
+        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id IN: hotelList];
         //Create list to upload
         list<Room__c> uploadList = new list <Room__c>();
         //Available rooms

@@ -5,11 +5,13 @@ public class roomMaintenance {
         String name;
         String url;}
 
-    public static void generateRooms(list<Hotel__c> hotelList){
+
+
+        public static void generateRooms(String HotelId){
 
 
         //Prepare data
-        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id IN: hotelList];
+        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id =: HotelId];
         //Create list to upload
         list<Room__c> uploadList = new list <Room__c>();
         //Available rooms
@@ -27,33 +29,11 @@ public class roomMaintenance {
        }
 
 
-    for(Hotel__c h:queryList){
-        for(Integer i=1;i<=roomList.size();i++){
-
-        Room__c ht = new Room__c(
-        Hotel__c = h.Id,
-        Name = roomList[i-1].name + ' Room ' + h.Name,
-        Type__c = roomList[i-1].name,
-        Mini_Bar__c = true,
-        Available__c = true,
-        Air_Condition__c = true,
-        tv__c = true,
-        Room_Number__c=i,
-        jacuzzi__c = roomList[i-1].name == 'President Suite' ? true : false,
-        photo_url__c = roomList[i-1].url,
-        Max_Number_of_Guests__c = roomList[i-1].name == 'President Suite' ? 5 : roomList[i-1].name == 'King' ? 4 : roomList[i-1].name == 'Double' ? 2 : 1
-        );
-      uploadList.add(ht);
-        }
-    }
-       insert uploadList;
-    }
-
-        public static void generateRooms(String hotelId){
+    public static void generateRooms(list<Hotel__c> hotelList){
 
 
         //Prepare data
-        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id =: hotelId];
+        list<Hotel__c> queryList = [Select Id,Name from Hotel__c where Id IN: hotelList];
         //Create list to upload
         list<Room__c> uploadList = new list <Room__c>();
         //Available rooms
