@@ -18,7 +18,7 @@ public class roomMaintenance {
        for(Integer i=1;i<=roomTypes.size();i++){
         roomType r = new roomType();
         r.name = roomTypes[i-1];
-        r.url = '/resource/1654680741000/rooms_photos/photo' + Integer.valueof((1+ Math.random() * 10)) + '.jpg';
+        r.url = '/resource/1654680741000/rooms_photos/photo' + Integer.valueof(( 1+ Math.random() * 10)) + '.jpg';
         roomList.add(r);
 
        }
