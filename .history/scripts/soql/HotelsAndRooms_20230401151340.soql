@@ -1,0 +1,1 @@
+SELECT Name, Hotel__c, Type__c, Max_Number_of_Guests__c, service__c, tv__c, Jacuzzi__c, Mini_Bar__c, occupied__c, Available__c, Air_Condition__c, Room_Number__c, photo_url__c from Rooms__r) From Hotel__c
