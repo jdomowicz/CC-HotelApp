@@ -16,8 +16,7 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo5.jpg"
+            "Room_Number__c": 3
         },
         {
             "attributes": {
@@ -35,8 +34,7 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 2
         },
         {
             "attributes": {
@@ -54,8 +52,7 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo3.jpg"
+            "Room_Number__c": 1
         },
         {
             "attributes": {
@@ -73,18 +70,17 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
+            "Room_Number__c": 4
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef5"
             },
-            "Name": "Single Room Olympic Munich",
+            "Name": "King Room Olympic Munich",
             "Hotel__c": "@Hotel__cRef2",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 4,
             "service__c": false,
             "tv__c": true,
             "Jacuzzi__c": false,
@@ -92,8 +88,7 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 3
         },
         {
             "attributes": {
@@ -111,13 +106,30 @@
             "occupied__c": true,
             "Available__c": false,
             "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
+            "Room_Number__c": 2
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef7"
+            },
+            "Name": "Single Room Olympic Munich",
+            "Hotel__c": "@Hotel__cRef2",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef8"
             },
             "Name": "President Suite Room Olympic Munich",
             "Hotel__c": "@Hotel__cRef2",
@@ -130,34 +142,14 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef8"
-            },
-            "Name": "King Room Olympic Munich",
-            "Hotel__c": "@Hotel__cRef2",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 4,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo9.jpg"
+            "Room_Number__c": 4
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef9"
             },
-            "Name": "Single Room Olympic Hotel Poznan",
+            "Name": "Single Room test hotel",
             "Hotel__c": "@Hotel__cRef3",
             "Type__c": "Single",
             "Max_Number_of_Guests__c": 1,
@@ -168,18 +160,17 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
+            "Room_Number__c": 1
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef10"
             },
-            "Name": "King Room Olympic Hotel Poznan",
+            "Name": "Double Room test hotel",
             "Hotel__c": "@Hotel__cRef3",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 4,
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
             "service__c": false,
             "tv__c": true,
             "Jacuzzi__c": false,
@@ -187,18 +178,17 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 2
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef11"
             },
-            "Name": "Double Room Olympic Hotel Poznan",
+            "Name": "King Room test hotel",
             "Hotel__c": "@Hotel__cRef3",
-            "Type__c": "Double",
-            "Max_Number_of_Guests__c": 2,
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 4,
             "service__c": false,
             "tv__c": true,
             "Jacuzzi__c": false,
@@ -206,15 +196,14 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
+            "Room_Number__c": 3
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef12"
             },
-            "Name": "President Suite Room Olympic Hotel Poznan",
+            "Name": "President Suite Room test hotel",
             "Hotel__c": "@Hotel__cRef3",
             "Type__c": "President Suite",
             "Max_Number_of_Guests__c": 5,
@@ -225,18 +214,17 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 4
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef13"
             },
-            "Name": "King Room Olympic Hotel Wroclaw",
+            "Name": "Single Room Olympic Hotel Poznan",
             "Hotel__c": "@Hotel__cRef4",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 4,
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
             "service__c": false,
             "tv__c": true,
             "Jacuzzi__c": false,
@@ -244,15 +232,14 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 1
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef14"
             },
-            "Name": "Double Room Olympic Hotel Wroclaw",
+            "Name": "Double Room Olympic Hotel Poznan",
             "Hotel__c": "@Hotel__cRef4",
             "Type__c": "Double",
             "Max_Number_of_Guests__c": 2,
@@ -263,320 +250,15 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
+            "Room_Number__c": 2
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef15"
             },
-            "Name": "Single Room Olympic Hotel Wroclaw",
+            "Name": "King Room Olympic Hotel Poznan",
             "Hotel__c": "@Hotel__cRef4",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef16"
-            },
-            "Name": "President Suite Room Olympic Hotel Wroclaw",
-            "Hotel__c": "@Hotel__cRef4",
-            "Type__c": "President Suite",
-            "Max_Number_of_Guests__c": 5,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": true,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef17"
-            },
-            "Name": "King Room Olympic Hotel Bilgoraj",
-            "Hotel__c": "@Hotel__cRef5",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 3,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo7.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef18"
-            },
-            "Name": "Double Room Olympic Hotel Bilgoraj",
-            "Hotel__c": "@Hotel__cRef5",
-            "Type__c": "Double",
-            "Max_Number_of_Guests__c": 2,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef19"
-            },
-            "Name": "Single Room Olympic Hotel Bilgoraj",
-            "Hotel__c": "@Hotel__cRef5",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo7.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef20"
-            },
-            "Name": "President Suite Room Olympic Hotel Bilgoraj",
-            "Hotel__c": "@Hotel__cRef5",
-            "Type__c": "President Suite",
-            "Max_Number_of_Guests__c": 5,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": true,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef21"
-            },
-            "Name": "King Room Olympic Hotel Bethesda",
-            "Hotel__c": "@Hotel__cRef6",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 3,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo3.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef22"
-            },
-            "Name": "Double Room Olympic Hotel Bethesda",
-            "Hotel__c": "@Hotel__cRef6",
-            "Type__c": "Double",
-            "Max_Number_of_Guests__c": 2,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef23"
-            },
-            "Name": "Single Room Olympic Hotel Bethesda",
-            "Hotel__c": "@Hotel__cRef6",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef24"
-            },
-            "Name": "President Suite Room Olympic Hotel Bethesda",
-            "Hotel__c": "@Hotel__cRef6",
-            "Type__c": "President Suite",
-            "Max_Number_of_Guests__c": 5,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": true,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef25"
-            },
-            "Name": "Single Room Olypmpic Hotel London",
-            "Hotel__c": "@Hotel__cRef7",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo8.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef26"
-            },
-            "Name": "Double Room Olypmpic Hotel London",
-            "Hotel__c": "@Hotel__cRef7",
-            "Type__c": "Double",
-            "Max_Number_of_Guests__c": 2,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo9.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef27"
-            },
-            "Name": "King Room Olypmpic Hotel London",
-            "Hotel__c": "@Hotel__cRef7",
-            "Type__c": "King",
-            "Max_Number_of_Guests__c": 3,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef28"
-            },
-            "Name": "President Suite Room Olypmpic Hotel London",
-            "Hotel__c": "@Hotel__cRef7",
-            "Type__c": "President Suite",
-            "Max_Number_of_Guests__c": 5,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": true,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef29"
-            },
-            "Name": "Single Room Olympic Hotel NY",
-            "Hotel__c": "@Hotel__cRef8",
-            "Type__c": "Single",
-            "Max_Number_of_Guests__c": 1,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 1,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo1.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef30"
-            },
-            "Name": "Double Room Olympic Hotel NY",
-            "Hotel__c": "@Hotel__cRef8",
-            "Type__c": "Double",
-            "Max_Number_of_Guests__c": 2,
-            "service__c": false,
-            "tv__c": true,
-            "Jacuzzi__c": false,
-            "Mini_Bar__c": true,
-            "occupied__c": false,
-            "Available__c": true,
-            "Air_Condition__c": true,
-            "Room_Number__c": 2,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
-        },
-        {
-            "attributes": {
-                "type": "Room__c",
-                "referenceId": "Room__cRef31"
-            },
-            "Name": "King Room Olympic Hotel NY",
-            "Hotel__c": "@Hotel__cRef8",
             "Type__c": "King",
             "Max_Number_of_Guests__c": 4,
             "service__c": false,
@@ -586,15 +268,302 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 3,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo2.jpg"
+            "Room_Number__c": 3
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef16"
+            },
+            "Name": "President Suite Room Olympic Hotel Poznan",
+            "Hotel__c": "@Hotel__cRef4",
+            "Type__c": "President Suite",
+            "Max_Number_of_Guests__c": 5,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": true,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef17"
+            },
+            "Name": "Single Room Olympic Hotel Wroclaw",
+            "Hotel__c": "@Hotel__cRef5",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef18"
+            },
+            "Name": "Double Room Olympic Hotel Wroclaw",
+            "Hotel__c": "@Hotel__cRef5",
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef19"
+            },
+            "Name": "President Suite Room Olympic Hotel Wroclaw",
+            "Hotel__c": "@Hotel__cRef5",
+            "Type__c": "President Suite",
+            "Max_Number_of_Guests__c": 5,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": true,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef20"
+            },
+            "Name": "King Room Olympic Hotel Wroclaw",
+            "Hotel__c": "@Hotel__cRef5",
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 4,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 3
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef21"
+            },
+            "Name": "King Room Olympic Hotel Bilgoraj",
+            "Hotel__c": "@Hotel__cRef6",
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 3,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 3
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef22"
+            },
+            "Name": "Double Room Olympic Hotel Bilgoraj",
+            "Hotel__c": "@Hotel__cRef6",
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef23"
+            },
+            "Name": "Single Room Olympic Hotel Bilgoraj",
+            "Hotel__c": "@Hotel__cRef6",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef24"
+            },
+            "Name": "President Suite Room Olympic Hotel Bilgoraj",
+            "Hotel__c": "@Hotel__cRef6",
+            "Type__c": "President Suite",
+            "Max_Number_of_Guests__c": 5,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": true,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef25"
+            },
+            "Name": "King Room Olympic Hotel Bethesda",
+            "Hotel__c": "@Hotel__cRef7",
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 3,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 3
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef26"
+            },
+            "Name": "Double Room Olympic Hotel Bethesda",
+            "Hotel__c": "@Hotel__cRef7",
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef27"
+            },
+            "Name": "Single Room Olympic Hotel Bethesda",
+            "Hotel__c": "@Hotel__cRef7",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef28"
+            },
+            "Name": "President Suite Room Olympic Hotel Bethesda",
+            "Hotel__c": "@Hotel__cRef7",
+            "Type__c": "President Suite",
+            "Max_Number_of_Guests__c": 5,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": true,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef29"
+            },
+            "Name": "Single Room Olypmpic Hotel London",
+            "Hotel__c": "@Hotel__cRef8",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef30"
+            },
+            "Name": "Double Room Olypmpic Hotel London",
+            "Hotel__c": "@Hotel__cRef8",
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef31"
+            },
+            "Name": "King Room Olypmpic Hotel London",
+            "Hotel__c": "@Hotel__cRef8",
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 3,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 3
         },
         {
             "attributes": {
                 "type": "Room__c",
                 "referenceId": "Room__cRef32"
             },
-            "Name": "President Suite Room Olympic Hotel NY",
+            "Name": "President Suite Room Olypmpic Hotel London",
             "Hotel__c": "@Hotel__cRef8",
             "Type__c": "President Suite",
             "Max_Number_of_Guests__c": 5,
@@ -605,8 +574,79 @@
             "occupied__c": false,
             "Available__c": true,
             "Air_Condition__c": true,
-            "Room_Number__c": 4,
-            "photo_url__c": "/resource/1654680741000/rooms_photos/photo4.jpg"
+            "Room_Number__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef33"
+            },
+            "Name": "Single Room Olympic Hotel NY",
+            "Hotel__c": "@Hotel__cRef9",
+            "Type__c": "Single",
+            "Max_Number_of_Guests__c": 1,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef34"
+            },
+            "Name": "King Room Olympic Hotel NY",
+            "Hotel__c": "@Hotel__cRef9",
+            "Type__c": "King",
+            "Max_Number_of_Guests__c": 4,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 3
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef35"
+            },
+            "Name": "Double Room Olympic Hotel NY",
+            "Hotel__c": "@Hotel__cRef9",
+            "Type__c": "Double",
+            "Max_Number_of_Guests__c": 2,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": false,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Room__c",
+                "referenceId": "Room__cRef36"
+            },
+            "Name": "President Suite Room Olympic Hotel NY",
+            "Hotel__c": "@Hotel__cRef9",
+            "Type__c": "President Suite",
+            "Max_Number_of_Guests__c": 5,
+            "service__c": false,
+            "tv__c": true,
+            "Jacuzzi__c": true,
+            "Mini_Bar__c": true,
+            "occupied__c": false,
+            "Available__c": true,
+            "Air_Condition__c": true,
+            "Room_Number__c": 4
         }
     ]
 }

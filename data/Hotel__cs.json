@@ -41,6 +41,24 @@
                 "type": "Hotel__c",
                 "referenceId": "Hotel__cRef3"
             },
+            "Name": "test hotel",
+            "Rating__c": null,
+            "total_rooms__c": 4,
+            "Rooms_Available__c": 4,
+            "Rooms_out_of_service__c": 0,
+            "TTM_ACV__c": null,
+            "City__c": "mirkow",
+            "Street__c": null,
+            "Rating_Stars__c": "<img src=\"/img/samples/stars_000.gif\" alt=\"rating\" border=\"0\"/>",
+            "zip_code__c": null,
+            "Total_Rented_Rooms__c": null,
+            "Country__c": null
+        },
+        {
+            "attributes": {
+                "type": "Hotel__c",
+                "referenceId": "Hotel__cRef4"
+            },
             "Name": "Olympic Hotel Poznan",
             "Rating__c": "5",
             "total_rooms__c": 4,
@@ -57,7 +75,7 @@
         {
             "attributes": {
                 "type": "Hotel__c",
-                "referenceId": "Hotel__cRef4"
+                "referenceId": "Hotel__cRef5"
             },
             "Name": "Olympic Hotel Wroclaw",
             "Rating__c": null,
@@ -75,7 +93,7 @@
         {
             "attributes": {
                 "type": "Hotel__c",
-                "referenceId": "Hotel__cRef5"
+                "referenceId": "Hotel__cRef6"
             },
             "Name": "Olympic Hotel Bilgoraj",
             "Rating__c": "5",
@@ -93,7 +111,7 @@
         {
             "attributes": {
                 "type": "Hotel__c",
-                "referenceId": "Hotel__cRef6"
+                "referenceId": "Hotel__cRef7"
             },
             "Name": "Olympic Hotel Bethesda",
             "Rating__c": "5",
@@ -111,7 +129,7 @@
         {
             "attributes": {
                 "type": "Hotel__c",
-                "referenceId": "Hotel__cRef7"
+                "referenceId": "Hotel__cRef8"
             },
             "Name": "Olypmpic Hotel London",
             "Rating__c": null,
@@ -129,7 +147,7 @@
         {
             "attributes": {
                 "type": "Hotel__c",
-                "referenceId": "Hotel__cRef8"
+                "referenceId": "Hotel__cRef9"
             },
             "Name": "Olympic Hotel NY",
             "Rating__c": "5",
