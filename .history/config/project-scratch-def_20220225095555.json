@@ -8,9 +8,6 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
-    },
-    "sharingSettings": {
-    "enableAssetSharing": true
-}
+    }
   }
 }

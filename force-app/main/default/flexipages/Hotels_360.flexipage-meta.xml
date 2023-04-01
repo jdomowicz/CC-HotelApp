@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>hotelThreeSixtyHeader</componentName>
+                <identifier>c_hotelThreeSixtyHeader</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>hotelThreeSixtyDetailsTables</componentName>
+                <identifier>c_hotelThreeSixtyDetailsTables</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bottom</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Hotels 360</masterLabel>
+    <template>
+        <name>customHotel360App</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

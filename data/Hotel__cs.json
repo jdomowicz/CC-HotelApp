@@ -13,7 +13,6 @@
             "TTM_ACV__c": 10128,
             "City__c": "San Francisco",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_300.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": "United States"
@@ -31,7 +30,6 @@
             "TTM_ACV__c": 3680,
             "City__c": "Munich",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_500.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": 1,
             "Country__c": "Germany"
@@ -49,7 +47,6 @@
             "TTM_ACV__c": null,
             "City__c": "mirkow",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_000.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": null
@@ -67,7 +64,6 @@
             "TTM_ACV__c": 0,
             "City__c": "Poznan",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_500.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": null
@@ -85,7 +81,6 @@
             "TTM_ACV__c": 0,
             "City__c": "Wroclaw",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_000.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": null
@@ -103,7 +98,6 @@
             "TTM_ACV__c": 3108,
             "City__c": "Bilgoraj",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_500.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": "Poland"
@@ -121,7 +115,6 @@
             "TTM_ACV__c": 108,
             "City__c": "Bethesda",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_500.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": "United States"
@@ -139,7 +132,6 @@
             "TTM_ACV__c": 1680,
             "City__c": "London",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_000.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": "United Kingdom"
@@ -157,7 +149,6 @@
             "TTM_ACV__c": 0,
             "City__c": "New York",
             "Street__c": null,
-            "Rating_Stars__c": "<img src=\"/img/samples/stars_500.gif\" alt=\"rating\" border=\"0\"/>",
             "zip_code__c": null,
             "Total_Rented_Rooms__c": null,
             "Country__c": "United States"
