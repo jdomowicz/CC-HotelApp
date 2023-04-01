@@ -5,7 +5,14 @@
 CC Hotel App is build to manage reservation for for CC hotel company. It includes LWC UI for support team to manage customer reservations
 
 
-## Table of contents ##
+## Quick Start ##
+
+- [x] Open DevHub
+- [ ] Create Scratch Org using 	*sfdx force:org:create -f project-scratch-def.json -a MyScratchOrg* 
+- [ ] Push metadata 	*sfdx force:source:push -u MyScratchOrg -f* 
+- [ ] Assign Permission Set 	*sfdx force:user:permset:assign --permsetname Hotel_User -u MyScratchOrg* 
+- [ ] Import Data 	* sfdx force:data:import:tree -p ./data/Hotel__c-Room__c-plan.json -u MyScratchOrg* 
+- [ ] **Open Hotel App and explore!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
