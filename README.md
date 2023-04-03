@@ -11,7 +11,7 @@ CC Hotel App is build to manage reservation for for CC hotel company. It include
 - [ ] Create Scratch Org using 	*sfdx force:org:create -f project-scratch-def.json -a MyScratchOrg* 
 - [ ] Push metadata 	*sfdx force:source:push -u MyScratchOrg -f* 
 - [ ] Assign Permission Set 	*sfdx force:user:permset:assign --permsetname Hotel_User -u MyScratchOrg* 
-- [ ] Import Data 	* sfdx force:data:import:tree -p ./data/Hotel__c-Room__c-plan.json -u MyScratchOrg* 
+- [ ] Import Data 	*sfdx force:data:import:tree -p ./data/Hotel__c-Room__c-plan.json -u MyScratchOrg* 
 - [ ] **Open Hotel App and explore!**
 
 
