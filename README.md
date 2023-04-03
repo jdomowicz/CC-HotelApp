@@ -14,7 +14,17 @@ CC Hotel App is build to manage reservation for for CC hotel company. It include
 - [ ] Import Data 	* sfdx force:data:import:tree -p ./data/Hotel__c-Room__c-plan.json -u MyScratchOrg* 
 - [ ] **Open Hotel App and explore!**
 
+
+## Overwiev ##
+Hotel Home App Tab - search for available rooms and make reservatios
+Hotels 360 - hotel reservation overview
+Spoonacular - integration with spoonacular API to query food recipes from external service (by id,by name,random recipe)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 
 
